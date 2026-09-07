@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface":"#0b1c30","surface-container-lowest":"#ffffff","primary":"#004ac6","on-tertiary-fixed":"#002109","on-secondary-container":"#5c647a","surface-container-highest":"#d3e4fe","surface-container":"#e5eeff","error-container":"#ffdad6","on-tertiary-fixed-variant":"#005320","primary-container":"#2563eb","primary-fixed-dim":"#b4c5ff","outline":"#737686","tertiary-fixed":"#7ffc97","surface-variant":"#d3e4fe","on-error-container":"#93000a","on-secondary":"#ffffff","surface":"#f8f9ff","tertiary":"#006329","on-error":"#ffffff","inverse-on-surface":"#eaf1ff","on-surface-variant":"#434655","on-primary-container":"#eeefff","primary-fixed":"#dbe1ff","on-secondary-fixed-variant":"#3f465c","on-tertiary-container":"#c7ffca","secondary-container":"#dae2fd","error":"#ba1a1a","secondary":"#565e74","background":"#f8f9ff","on-secondary-fixed":"#131b2e","inverse-surface":"#213145","surface-tint":"#0053db","surface-container-low":"#eff4ff","on-background":"#0b1c30","on-primary":"#ffffff","on-tertiary":"#ffffff","inverse-primary":"#b4c5ff","tertiary-fixed-dim":"#62df7d","surface-container-high":"#dce9ff","secondary-fixed":"#dae2fd","on-primary-fixed":"#00174b","on-primary-fixed-variant":"#003ea8","surface-dim":"#cbdbf5","outline-variant":"#c3c6d7","surface-bright":"#f8f9ff","secondary-fixed-dim":"#bec6e0","tertiary-container":"#007f36"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter-mobile":"1rem","spacing-2xl":"3rem","spacing-md":"1rem","spacing-3xl":"4rem","spacing-xl":"2rem","margin-desktop":"2rem","spacing-2xs":"0.25rem","spacing-lg":"1.5rem","container-max":"80rem","spacing-xs":"0.5rem","spacing-sm":"0.75rem","gutter-desktop":"1.5rem","margin-mobile":"1rem"},fontFamily:{"headline-sm":["Plus Jakarta Sans"],"mono-data":["Inter"],"label-sm":["Inter"],"display-hero-mobile":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-xl":["Plus Jakarta Sans"],"body-md":["Inter"],"label-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"]},fontSize:{"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"mono-data":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"display-hero-mobile":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"800"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-xl-mobile":["26px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-inverse-surface text-inverse-on-surface shadow-md border-b border-outline-variant/30"><div class="h-20 max-w-[80rem] mx-auto px-gutter-desktop flex items-center justify-between gap-spacing-md"><div class="flex items-center gap-spacing-md"><div class="flex items-center gap-spacing-sm"><img alt="Smart Metrology SIH 2026 Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UP6uw2AYyESASi8UNs0o_btyx-UGq55JP_87oi02u8NiS6BEaHKq2Vv8H_NmmN87-4z9_f3j1U0kMrDM_tCdnTib5do14l0Dq0XAOjlB5hU_aw3BEnATTtYVArd_7uBU-4zeScLIJ4iEGD-inv4Bk7EY29cOjP9nr0Avz2rlhJk5IlPMwUGFLBGfGgEgLFOIKPvexeRLvf4dH7Y6HFzewvu3857Tnrndim-nDkhSMp_Az3IpxRyiw0PuG7"/><div class="flex flex-col"><div class="flex items-center gap-spacing-xs"><span class="font-headline-sm text-headline-sm text-surface tracking-tight leading-none">Smart Metrology</span><span class="inline-flex items-center px-spacing-xs py-0.5 rounded text-[10px] font-semibold tracking-wider uppercase bg-[#ff9933]/20 text-[#ffb066] border border-[#ff9933]/30">Govt of India</span></div><div class="flex items-center gap-1.5 mt-1"><div class="h-1 w-6 rounded-full bg-gradient-to-r from-[#FF9933] via-[#FFFFFF] to-[#138808]"></div><span class="font-label-sm text-label-sm text-surface-dim uppercase tracking-widest text-[9px]">SIH 2026 • Legal Metrology Rules 2011</span></div></div></div><nav class="hidden lg:flex items-center gap-1 ml-spacing-md" data-active-classes="text-primary-fixed bg-surface-container-highest/10 border-b-2 border-primary-container font-semibold"><a aria-current="page" class="px-spacing-sm py-2 rounded-t transition-colors text-primary-fixed bg-surface-container-highest/10 border-b-2 border-primary-container font-semibold" data-path="home" href="#">Home</a><a class="px-spacing-sm py-2 rounded-t text-body-sm font-body-sm text-surface-dim hover:text-surface hover:bg-surface-container-highest/10 transition-colors" data-path="scan-product" href="#">Scan Product</a><a class="px-spacing-sm py-2 rounded-t text-body-sm font-body-sm text-surface-dim hover:text-surface hover:bg-surface-container-highest/10 transition-colors" data-path="compliance-dashboard" href="#">Compliance Dashboard</a><a class="px-spacing-sm py-2 rounded-t text-body-sm font-body-sm text-surface-dim hover:text-surface hover:bg-surface-container-highest/10 transition-colors" data-path="reports" href="#">Reports</a><a class="px-spacing-sm py-2 rounded-t text-body-sm font-body-sm text-surface-dim hover:text-surface hover:bg-surface-container-highest/10 transition-colors" data-path="product-history" href="#">Product History</a><a class="px-spacing-sm py-2 rounded-t text-body-sm font-body-sm text-surface-dim hover:text-surface hover:bg-surface-container-highest/10 transition-colors" data-path="about" href="#">About</a></nav></div><div class="flex items-center gap-spacing-sm"><div class="hidden xl:flex items-center gap-1.5 bg-surface-container-lowest/10 border border-outline-variant/20 px-spacing-sm py-1.5 rounded-full text-surface-dim font-mono-data text-mono-data"><span class="material-symbols-outlined text-[16px] text-surface-bright">calendar_today</span><span>9 September 2026</span></div><div class="relative flex items-center justify-center"><button class="w-9 h-9 rounded-full flex items-center justify-center text-surface-dim hover:text-surface hover:bg-surface-container-lowest/10 transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span></button><span class="absolute top-1 right-1 flex items-center justify-center min-w-[16px] h-4 px-1 rounded-full bg-error text-on-error font-mono-data text-[10px] font-bold leading-none ring-2 ring-inverse-surface">3</span></div><div class="hidden md:flex items-center gap-spacing-xs pl-spacing-xs border-l border-outline-variant/30"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2OcRfrFHLQrZNXrsnOTj9uPXynXcIHVrsSp35SvVj--zakpxRcqqyFa0N6xD523Ye-Dc6g3te9w6DgPWp2Rd1V6ipedLmvojJXj7MmHO60RXIxMFsw5nGoD1b36s8mI6OEUa55RUNwzdi5rBAsw06qinO70tIdVfjH8pxkmjLd431RVss6S3qd-GuSVplEKszR2wbKCLhvQx9TCxNZeC-qSp44dK23jqJLcE6ivrcTjr_qNL-QOFkXA"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary ring-1 ring-inverse-surface"></span></div><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-surface leading-tight">Rajesh Sharma</span><span class="font-label-sm text-label-sm text-surface-dim leading-tight text-[10px]">Sr. Metrology Inspector (ID: LM-10284)</span></div></div><a class="inline-flex items-center gap-spacing-xs px-spacing-md py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md transition-colors shadow-sm" data-path="scan-product" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span><span>Start Inspection</span></a></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Sovereign Ticker & Operational Notification Bar -->
+<div class="w-full bg-surface-container text-on-surface-variant text-body-sm py-2 px-gutter-desktop">
+<div class="max-w-[80rem] mx-auto flex flex-wrap items-center justify-between gap-spacing-sm">
+<div class="flex items-center gap-spacing-xs">
+<span class="flex h-2 w-2 rounded-full bg-tertiary"></span>
+<span class="font-label-sm uppercase tracking-wider text-primary font-bold">Rule 6(1) Enforcer Live</span>
+<span class="text-outline">/</span>
+<span class="font-mono-data text-mono-data truncate">National Metrology AI Telemetry Active • SIH-2026 Sandbox Build v4.2.1</span>
+</div>
+<div class="flex items-center gap-spacing-md font-mono-data text-mono-data">
+<span class="hidden sm:inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">verified_user</span>
+          Official Portal of Legal Metrology Division
+        </span>
+<a class="text-primary hover:text-on-surface font-semibold flex items-center gap-0.5" href="#stats">
+          Live Telemetry <span class="material-symbols-outlined text-[14px]">arrow_downward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Hero Section -->
+<section class="relative w-full py-spacing-2xl lg:py-spacing-3xl overflow-hidden bg-gradient-to-b from-surface via-surface-container-low to-surface">
+<!-- Ambient Backdrop Visual Effects -->
+<div class="absolute -top-24 right-1/4 w-96 h-96 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -left-20 w-80 h-80 rounded-full bg-secondary-fixed/25 blur-3xl pointer-events-none"></div>
+<div class="max-w-[80rem] mx-auto px-gutter-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-spacing-xl items-center">
+<!-- Hero Left Content (5 cols) -->
+<div class="lg:col-span-5 flex flex-col items-start z-10">
+<!-- Institutional Badge -->
+<div class="inline-flex items-center gap-spacing-xs px-spacing-sm py-1 rounded-full bg-surface-container-highest/60 text-primary font-label-sm text-label-sm shadow-sm mb-spacing-md">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="tracking-wide">AI-Powered Legal Metrology Inspection Rules, 2011</span>
+</div>
+<!-- Hero Headline -->
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight leading-[1.08] mb-spacing-md">
+            Smart Compliance.<br/>
+<span class="text-primary">Safer Markets.</span>
+</h1>
+<!-- Body Description -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-spacing-xl leading-relaxed">
+            Scan product packages, extract mandatory declarations, validate statutory conformity, and generate forensic, evidence-backed inspection reports in seconds under the Legal Metrology (Packaged Commodities) Rules, 2011.
+          </p>
+<!-- Primary CTAs -->
+<div class="flex flex-wrap items-center gap-spacing-md w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-spacing-xs px-spacing-xl py-3.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-on-primary-fixed-variant transition-all shadow-md hover:shadow-lg" data-path="scan-product" href="#">
+<span class="material-symbols-outlined text-[20px]">document_scanner</span>
+<span>Scan Product</span>
+</a>
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-spacing-xs px-spacing-lg py-3.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-high transition-all" id="openDemoBtn" type="button">
+<span class="material-symbols-outlined text-[20px] text-primary">play_circle</span>
+<span>View Interactive Demo</span>
+</button>
+</div>
+<!-- Trust Badges & Ministry Seal -->
+<div class="mt-spacing-xl pt-spacing-lg flex flex-wrap items-center gap-spacing-lg">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-tertiary/15 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface leading-tight">100% Rule 6(1)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Standard Checklist</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary-container/15 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">speed</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface leading-tight">&lt; 2.4s Telemetry</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">OCR &amp; AI Verdict</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Hero Right Visual: Split Scanning Stage (7 cols) -->
+<div class="lg:col-span-7 relative flex items-center justify-center">
+<!-- Outer Inspection Deck Card -->
+<div class="relative w-full rounded-2xl bg-surface-container-lowest p-spacing-md shadow-xl">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-spacing-md items-center">
+<!-- Scanning Stage with Turntable Image and Overlays (7 cols) -->
+<div class="md:col-span-7 relative rounded-xl overflow-hidden bg-on-surface flex items-center justify-center min-h-[380px] sm:min-h-[420px]">
+<!-- Packaged Commodity Visual (Swasthya Chakki Atta 5kg on Turntable) -->
+<img class="w-full h-full object-cover object-center max-h-[440px]" data-alt="Packaged commercial wheat flour commodity pouch Swasthya Fresh Chakki Atta 5kg placed firmly on an aluminum digital metrology rotary inspection scale inside a high-tech legal verification laboratory with stainless steel optical sensor arms and clean ambient studio lighting, crisp high definition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmspM7hpVP81MjN-qdFHNLQ0Pj1dhAKzp6GH1U3EvRiIxB-a2uTvqGEYCDIPCVth5it9BW_051fs3xPNsiQyp9sfiqZQMT2SvzZ9CgNQj3S1XYQko8DiZThG_MKajQSWJOMlS9bjMbd9NKB3TMyrj9RscGEU--dNKWXnc5R4TPnxTttTavicqaYUb3E7Tfzl4IfJ5BQgDVqw766Kin6ZM-gCjXhC6GVDJpeRxDFXXgrqYK2HQpB3fokw"/>
+<!-- High-Tech Animated Laser Beam Overlay -->
+<div class="absolute inset-x-0 h-1 bg-gradient-to-r from-transparent via-error to-transparent opacity-80 animate-pulse shadow-[0_0_12px_rgba(186,26,26,0.9)]" style="top: 44%;"></div>
+<!-- Computer Vision Bounding Box 1: Product Name -->
+<div class="absolute top-[28%] left-[28%] right-[28%] h-[36px] bg-primary-container/10 rounded">
+<div class="absolute -top-5 left-1 bg-surface-container-lowest text-on-surface text-[10px] font-mono-data px-1.5 py-0.5 rounded shadow flex items-center gap-1 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span>Product Name: 98.4%</span>
+</div>
+</div>
+<!-- Computer Vision Bounding Box 2: Net Quantity (Validated) -->
+<div class="absolute top-[48%] left-[20%] w-[38%] h-[32px] bg-tertiary/10 rounded">
+<div class="absolute -top-5 left-0 bg-surface-container-lowest text-tertiary text-[10px] font-mono-data px-1.5 py-0.5 rounded shadow flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[12px]">check_circle</span>
+<span>Net Qty: 5 kg [PASS]</span>
+</div>
+</div>
+<!-- Computer Vision Bounding Box 3: MRP & Taxes -->
+<div class="absolute top-[58%] left-[20%] w-[38%] h-[28px] bg-tertiary/10 rounded">
+<div class="absolute -bottom-5 left-0 bg-surface-container-lowest text-tertiary text-[10px] font-mono-data px-1.5 py-0.5 rounded shadow flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[12px]">currency_rupee</span>
+<span>MRP: ₹245.00 (Incl. Taxes)</span>
+</div>
+</div>
+<!-- Computer Vision Bounding Box 4: Font Height Check Flag -->
+<div class="absolute top-[68%] left-[22%] w-[42%] h-[24px] bg-error/10 rounded">
+<div class="absolute -bottom-5 right-0 bg-error-container text-on-error-container text-[9px] font-mono-data px-1.5 py-0.5 rounded shadow flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[11px]">warning</span>
+<span>Rule 9: Font H &lt; 4mm</span>
+</div>
+</div>
+<!-- Live Camera HUD Status Pill -->
+<div class="absolute top-3 right-3 bg-inverse-surface/85 backdrop-blur px-2.5 py-1 rounded-full text-inverse-on-surface font-mono-data text-[11px] flex items-center gap-1.5 shadow">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span>CAM-01 • 4K TELEMETRY</span>
+</div>
+<div class="absolute bottom-3 left-3 bg-inverse-surface/80 backdrop-blur px-2 py-0.5 rounded text-surface font-mono-data text-[10px]">
+<span>EXP: 1/250s • ISO 100 • 35mm</span>
+</div>
+</div>
+<!-- Floating Live Verification Verdict Card (5 cols) -->
+<div class="md:col-span-5 flex flex-col justify-between h-full bg-surface-container-low rounded-xl p-spacing-md shadow-inner space-y-spacing-sm">
+<!-- Card Header -->
+<div class="flex items-center justify-between pb-spacing-xs">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Diagnostic Matrix</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Compliance Check</h3>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-mono-data text-mono-data font-bold">
+<span class="material-symbols-outlined text-[14px]">done_all</span> 96%
+                  </span>
+</div>
+<!-- Checkpoints List -->
+<div class="space-y-1.5 py-1">
+<div class="flex items-center justify-between p-1.5 rounded bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Product Identity / Name</span>
+</div>
+<span class="font-mono-data text-[11px] text-tertiary font-semibold">MATCH</span>
+</div>
+<div class="flex items-center justify-between p-1.5 rounded bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Net Quantity (5 kg)</span>
+</div>
+<span class="font-mono-data text-[11px] text-tertiary font-semibold">VALID</span>
+</div>
+<div class="flex items-center justify-between p-1.5 rounded bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">MRP &amp; Unit Sale Price</span>
+</div>
+<span class="font-mono-data text-[11px] text-tertiary font-semibold">₹49.00/kg</span>
+</div>
+<div class="flex items-center justify-between p-1.5 rounded bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Manufacturer Address</span>
+</div>
+<span class="font-mono-data text-[11px] text-tertiary font-semibold">VERIFIED</span>
+</div>
+<div class="flex items-center justify-between p-1.5 rounded bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Consumer Care Helpline</span>
+</div>
+<span class="font-mono-data text-[11px] text-tertiary font-semibold">ACTIVE</span>
+</div>
+<div class="flex items-center justify-between p-1.5 rounded bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Mfg Date &amp; Batch No.</span>
+</div>
+<span class="font-mono-data text-[11px] text-tertiary font-semibold">12/2023</span>
+</div>
+<!-- Warning Row: Font Size -->
+<div class="flex items-center justify-between p-1.5 rounded bg-error-container/40 text-on-error-container shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-error">report_problem</span>
+<span class="font-body-sm text-body-sm font-medium">Rule 9: Font Height</span>
+</div>
+<span class="font-mono-data text-[11px] text-error font-bold">2.8mm &lt; 4mm</span>
+</div>
+</div>
+<!-- Final Decision Pill -->
+<div class="pt-spacing-xs">
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-tertiary text-on-tertiary shadow">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+<div>
+<div class="font-label-md text-label-md leading-tight">Compliance Status</div>
+<div class="font-body-sm text-[10px] opacity-90">Statutory Notice Discretionary</div>
+</div>
+</div>
+<span class="font-headline-sm text-headline-sm uppercase font-bold tracking-wider">PASS</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Sub-bar Inside Card -->
+<div class="mt-spacing-sm pt-spacing-xs flex flex-wrap items-center justify-between gap-spacing-xs text-secondary font-mono-data text-mono-data">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">qr_code_scanner</span>
+                SKU: SFA-234501 • FSSAI Lic #10012011000234
+              </span>
+<span class="text-on-surface-variant font-medium">Commodity: Atta (Wheat Flour) • Category: Pre-Packaged Food</span>
+</div>
+</div>
+<!-- Micro Floating Decorative Badge -->
+<div class="absolute -bottom-4 -left-4 hidden sm:flex items-center gap-2 bg-inverse-surface text-inverse-on-surface px-spacing-md py-2 rounded-xl shadow-lg">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]">auto_awesome</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm leading-tight text-surface-bright">Vision Inference</span>
+<span class="font-mono-data text-[10px] text-surface-dim">98.4% Confidence Score</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Stat Bar (KPI Metrics) -->
+<section class="w-full bg-surface-container-high py-spacing-lg" id="stats">
+<div class="max-w-[80rem] mx-auto px-gutter-desktop">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-spacing-md">
+<div class="flex flex-col p-spacing-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Monthly Audits</span>
+<span class="material-symbols-outlined text-primary text-[18px]">inventory_2</span>
+</div>
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">1,284</span>
+<span class="font-mono-data text-[11px] text-tertiary flex items-center gap-0.5 mt-1 font-semibold">
+<span class="material-symbols-outlined text-[13px]">trending_up</span> +14.8% vs last month
+          </span>
+</div>
+<div class="flex flex-col p-spacing-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Detection Precision</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">model_training</span>
+</div>
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">94.2%</span>
+<span class="font-mono-data text-[11px] text-secondary flex items-center gap-0.5 mt-1 font-semibold">
+<span>Edge OCR + Vision v4.2</span>
+</span>
+</div>
+<div class="flex flex-col p-spacing-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Rules Automated</span>
+<span class="material-symbols-outlined text-primary text-[18px]">gavel</span>
+</div>
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">42</span>
+<span class="font-mono-data text-[11px] text-primary flex items-center gap-0.5 mt-1 font-semibold">
+<span>PCR 2011 Statutes</span>
+</span>
+</div>
+<div class="flex flex-col p-spacing-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Turnaround Gain</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">timer</span>
+</div>
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">65%</span>
+<span class="font-mono-data text-[11px] text-tertiary flex items-center gap-0.5 mt-1 font-semibold">
+<span class="material-symbols-outlined text-[13px]">arrow_downward</span> Time Saved per SKU
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Horizontal Interactive Workflow: "How It Works" -->
+<section class="w-full py-spacing-2xl bg-surface">
+<div class="max-w-[80rem] mx-auto px-gutter-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-spacing-xl gap-spacing-md">
+<div>
+<div class="flex items-center gap-spacing-xs mb-1">
+<span class="h-3 w-1 bg-primary rounded-full"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">End-to-End Pipeline</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold">How It Works</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          A zero-friction automated progression from edge image capture through AI validation and evidentiary PDF issuance.
+        </p>
+</div>
+<!-- 5-Step Process Horizontal Bar -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-spacing-md relative">
+<!-- Step 1 -->
+<div class="relative p-spacing-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all group">
+<div class="flex items-center justify-between mb-spacing-md">
+<span class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center font-headline-sm group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">photo_camera</span>
+</span>
+<span class="font-mono-data text-mono-data font-bold text-secondary">01</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Scan / Upload</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Capture packaging faces, multi-angle polybags, or carton labels directly on-site via mobile tablet or static optical rig.
+          </p>
+</div>
+<!-- Step 2 -->
+<div class="relative p-spacing-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all group">
+<div class="flex items-center justify-between mb-spacing-md">
+<span class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center font-headline-sm group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">document_scanner</span>
+</span>
+<span class="font-mono-data text-mono-data font-bold text-secondary">02</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">OCR + Vision</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Convolutional vision parses spatial packaging geography, localizing label areas, barcode regions, and textual declarations.
+          </p>
+</div>
+<!-- Step 3 -->
+<div class="relative p-spacing-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all group">
+<div class="flex items-center justify-between mb-spacing-md">
+<span class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center font-headline-sm group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">fact_check</span>
+</span>
+<span class="font-mono-data text-mono-data font-bold text-secondary">03</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Extract Fields</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Identifies mandatory elements: Net Weight, MRP, Country of Origin, Manufacturing Dates, Batch ID, and Helpline channels.
+          </p>
+</div>
+<!-- Step 4 -->
+<div class="relative p-spacing-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all group">
+<div class="flex items-center justify-between mb-spacing-md">
+<span class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center font-headline-sm group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">balance</span>
+</span>
+<span class="font-mono-data text-mono-data font-bold text-secondary">04</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Rule Validation</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Automated legal cross-check against Legal Metrology Rules 2011, evaluating font height (Rule 9) and mandatory declarations.
+          </p>
+</div>
+<!-- Step 5 -->
+<div class="relative p-spacing-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all group">
+<div class="flex items-center justify-between mb-spacing-md">
+<span class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center font-headline-sm group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">picture_as_pdf</span>
+</span>
+<span class="font-mono-data text-mono-data font-bold text-secondary">05</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Evidentiary Report</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Generate tamper-evident statutory audit reports equipped with cryptographic image stamps and inspector digital sign-off.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Feature Section: "Everything You Need for Smart Compliance" (Bento Style) -->
+<section class="w-full py-spacing-2xl lg:py-spacing-3xl bg-surface-container-low">
+<div class="max-w-[80rem] mx-auto px-gutter-desktop">
+<div class="text-center max-w-3xl mx-auto mb-spacing-2xl">
+<span class="inline-block px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-mono-data text-mono-data uppercase tracking-wider mb-spacing-xs">
+          Modular Enforcement Suite
+        </span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold">
+          From Product Scan to Compliance Decision
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">
+          Purpose-built for Metrology Inspectors, consumer watchdog cells, and state-level enforcement teams to detect illicit trade practices without manual friction.
+        </p>
+</div>
+<!-- 6 High-Impact Feature Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-spacing-lg">
+<!-- Feature 1: AI Product Scanning -->
+<div class="p-spacing-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary-container/10 text-primary-container flex items-center justify-center mb-spacing-md group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[28px]">document_scanner</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-bold">AI Product Scanning</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Scan commodity packages, labels, pouches, and boxes using handheld cameras or automated conveyor setups. Zero preprocessing required.
+            </p>
+</div>
+<div class="mt-spacing-md pt-spacing-sm flex items-center justify-between text-primary font-label-md text-label-md">
+<span>Multi-surface support</span>
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+</div>
+<!-- Feature 2: OCR & Declaration Detection -->
+<div class="p-spacing-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-tertiary/10 text-tertiary flex items-center justify-center mb-spacing-md group-hover:bg-tertiary group-hover:text-on-tertiary transition-colors">
+<span class="material-symbols-outlined text-[28px]">text_fields</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-bold">Declaration Detection</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Automatically identify mandatory legal metrology declarations through advanced bilingual optical character recognition tailored for Indian packaged goods.
+            </p>
+</div>
+<div class="mt-spacing-md pt-spacing-sm flex items-center justify-between text-tertiary font-label-md text-label-md">
+<span>98%+ Text Accuracy</span>
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+</div>
+<!-- Feature 3: Legal Rule Validation -->
+<div class="p-spacing-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-spacing-md group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[28px]">policy</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-bold">Rule-Based Validation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Validate extracted values against configurable Legal Metrology (Packaged Commodities) Rules, 2011 statutory guidelines and amendments.
+            </p>
+</div>
+<div class="mt-spacing-md pt-spacing-sm flex items-center justify-between text-primary font-label-md text-label-md">
+<span>Statute-bound checks</span>
+<span class="material-symbols-outlined text-[18px]">shield</span>
+</div>
+</div>
+<!-- Feature 4: Violation Detection -->
+<div class="p-spacing-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-error-container text-on-error-container flex items-center justify-center mb-spacing-md group-hover:bg-error group-hover:text-on-error transition-colors">
+<span class="material-symbols-outlined text-[28px]">warning</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-bold">Violation Detection</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Pinpoint missing declarations, suppressed MRPs, incorrect font sizes (Rule 9), obscured net weights, or non-compliant country of origin notices instantly.
+            </p>
+</div>
+<div class="mt-spacing-md pt-spacing-sm flex items-center justify-between text-error font-label-md text-label-md">
+<span>Automated Flagging</span>
+<span class="material-symbols-outlined text-[18px]">flag</span>
+</div>
+</div>
+<!-- Feature 5: Evidence-Based Reports -->
+<div class="p-spacing-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-fixed flex items-center justify-center mb-spacing-md group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[28px]">assignment</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-bold">Evidence-Based Reports</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Compile court-admissible audit reports featuring localized high-res cropped images, timestamped optical tags, and rule breach citations.
+            </p>
+</div>
+<div class="mt-spacing-md pt-spacing-sm flex items-center justify-between text-secondary font-label-md text-label-md">
+<span>PDF &amp; JSON Export</span>
+<span class="material-symbols-outlined text-[18px]">download</span>
+</div>
+</div>
+<!-- Feature 6: Enforcement Dashboard -->
+<div class="p-spacing-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary-fixed text-on-primary-fixed flex items-center justify-center mb-spacing-md group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[28px]">query_stats</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-bold">Enforcement Dashboard</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Monitor officer activities, flag recidivist brand entities, inspect geographic non-compliance clusters, and track remediation filings seamlessly.
+            </p>
+</div>
+<div class="mt-spacing-md pt-spacing-sm flex items-center justify-between text-primary-container font-label-md text-label-md">
+<span>GIS-linked analytics</span>
+<span class="material-symbols-outlined text-[18px]">map</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Live Inspection Comparison & Forensic Evidence Showcase -->
+<section class="w-full py-spacing-2xl bg-surface">
+<div class="max-w-[80rem] mx-auto px-gutter-desktop">
+<div class="rounded-3xl bg-inverse-surface text-inverse-on-surface p-spacing-xl lg:p-spacing-2xl shadow-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-spacing-xl items-center">
+<div class="lg:col-span-5 space-y-spacing-md">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/15 text-primary-fixed-dim font-mono-data text-mono-data">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed"></span>
+              Field Testing Sandbox Live
+            </div>
+<h2 class="font-headline-xl text-headline-xl text-surface font-bold">
+              Eliminate Ambiguity in Field Enforcement
+            </h2>
+<p class="font-body-md text-body-md text-surface-dim leading-relaxed">
+              Traditional physical checks require calipers, calculation tables, and manual ledger logging. Smart Metrology automates font micro-measurements, unit conversions, and statutory comparisons in real-time.
+            </p>
+<div class="space-y-3 pt-2">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px] mt-0.5">check_circle</span>
+<span class="font-body-md text-body-md text-surface">Automated letter-height gauge ensures conformance with First Schedule Rules</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px] mt-0.5">check_circle</span>
+<span class="font-body-md text-body-md text-surface">Instant verification of imported commodities with Country of Origin validations</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px] mt-0.5">check_circle</span>
+<span class="font-body-md text-body-md text-surface">Cryptographically stamped chain of custody for statutory compounding or prosecution</span>
+</div>
+</div>
+<div class="pt-spacing-md">
+<a class="inline-flex items-center gap-2 px-spacing-lg py-3 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors shadow" data-path="compliance-dashboard" href="#">
+<span>Explore Compliance Intelligence</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Forensic Evidence Preview Mini-Board (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest text-on-surface rounded-2xl p-spacing-lg shadow-2xl">
+<div class="flex items-center justify-between pb-spacing-sm mb-spacing-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">find_in_page</span>
+<span class="font-headline-sm text-headline-sm font-bold">Inspection Notice Snapshot #IN-2026-9021</span>
+</div>
+<span class="px-2.5 py-1 rounded bg-error-container text-on-error-container font-mono-data text-mono-data font-bold">
+                POTENTIAL INFRACTION
+              </span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-spacing-md">
+<!-- Visual Slice -->
+<div class="rounded-xl overflow-hidden bg-surface-container relative">
+<img class="w-full h-44 object-cover" data-alt="Close up forensic macro image of the ingredient declaration and batch printing on the back panel of a packaged grocery product with highlighted measurement box showing small illegible font size in natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASXsQg3_e9I2fsPEHA94yea8Q1oLDUKBuQJNiPn1Dm1HlEPEcqXzAt-oPXadYOg7vm9wWwrAG-hhrD826i8xdbDFUgjX-n_dO1y0W9pa8XpImTJSaK0G7uR-PB1xndg75VLhzly1EGjuFAL2Es51rjUaVzpk1hkr2qXntB_w8zxr_r8yXIzlauOhCqQuUo8bwJoB7iDakP_QzIdugCtDmz3aLR_XCV5KAkVYfQxvJ77MkA8W1wTbbJQg"/>
+<div class="absolute bottom-2 left-2 bg-on-surface/80 text-surface text-[10px] font-mono-data px-2 py-0.5 rounded">
+                  CROPPED PANEL B - OCR REGION 04
+                </div>
+</div>
+<!-- Rule Breaches & Metrics -->
+<div class="flex flex-col justify-between space-y-2">
+<div>
+<div class="text-[11px] font-mono-data text-secondary uppercase">Statute Section</div>
+<div class="font-label-md text-label-md text-on-surface font-bold">Rule 9(1) - Minimum Font Height</div>
+</div>
+<div>
+<div class="text-[11px] font-mono-data text-secondary uppercase">Extracted Dimension</div>
+<div class="font-mono-data text-[13px] text-error font-bold">2.80 mm (Mandatory: ≥ 4.00 mm for &gt; 1kg)</div>
+</div>
+<div>
+<div class="text-[11px] font-mono-data text-secondary uppercase">Responsible Packer / Brand</div>
+<div class="font-body-sm text-body-sm text-on-surface">Swasthya Consumer Goods Private Limited</div>
+</div>
+<div class="pt-2 flex items-center gap-2">
+<a class="flex-1 text-center py-2 px-3 rounded bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" data-path="reports" href="#">
+                    View Full Docket
+                  </a>
+<button class="py-2 px-3 rounded bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors" type="button">
+                    Issue Notice
+                  </button>
+</div>
+</div>
+</div>
+<div class="mt-spacing-md pt-spacing-xs flex items-center justify-between text-secondary font-mono-data text-[11px]">
+<span>Investigating Officer: Rajesh Sharma (LM-10284)</span>
+<span>Jurisdiction: New Delhi North Circle</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Demo Modal Drawer (Hidden by default, triggered via JavaScript) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-on-surface/50 backdrop-blur-sm hidden p-4" id="demoModal">
+<div class="w-full max-w-2xl bg-surface-container-lowest rounded-2xl shadow-2xl p-spacing-xl relative">
+<button class="absolute top-4 right-4 w-9 h-9 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-surface-container-highest transition-colors" id="closeDemoBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<div class="flex items-center gap-2 mb-spacing-sm">
+<span class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Simulated Inspection Workflow</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-spacing-lg">
+        Experience how the edge AI computer vision module captures, localizes, and flags packages under Legal Metrology Rules, 2011.
+      </p>
+<!-- Video / Simulation Placeholder Screen -->
+<div class="relative w-full rounded-xl overflow-hidden bg-surface-container-high flex flex-col items-center justify-center p-spacing-xl">
+<div class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg mb-spacing-sm animate-bounce">
+<span class="material-symbols-outlined text-[32px]">center_focus_strong</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Ready to scan your first packaged sample</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 text-center max-w-md">
+          Connect your device camera or upload high-resolution package label images to start the automated validation audit.
+        </span>
+<div class="flex items-center gap-spacing-md mt-spacing-lg">
+<a class="px-spacing-lg py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow" data-path="scan-product" href="#">
+            Launch Camera Scanner
+          </a>
+<button class="px-spacing-md py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" id="closeDemoSecondaryBtn" type="button">
+            Dismiss
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript for Demo Modal Control -->
+<script>
+    (function() {
+      const openBtn = document.getElementById('openDemoBtn');
+      const closeBtn = document.getElementById('closeDemoBtn');
+      const closeSecondaryBtn = document.getElementById('closeDemoSecondaryBtn');
+      const modal = document.getElementById('demoModal');
+
+      if (openBtn && modal) {
+        openBtn.addEventListener('click', function() {
+          modal.classList.remove('hidden');
+        });
+      }
+
+      function closeModal() {
+        if (modal) {
+          modal.classList.add('hidden');
+        }
+      }
+
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      if (closeSecondaryBtn) closeSecondaryBtn.addEventListener('click', closeModal);
+
+      if (modal) {
+        modal.addEventListener('click', function(e) {
+          if (e.target === modal) {
+            closeModal();
+          }
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/40 pt-spacing-2xl pb-spacing-xl"><div class="max-w-[80rem] mx-auto px-gutter-desktop"><div class="grid grid-cols-1 md:grid-cols-4 gap-spacing-xl pb-spacing-xl border-b border-outline-variant/30"><div class="space-y-spacing-sm md:col-span-2"><div class="flex items-center gap-spacing-xs"><div class="h-4 w-1 rounded-full bg-primary-container"></div><span class="font-headline-sm text-headline-sm text-on-surface">Smart Metrology Enforcement Architecture</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-lg leading-relaxed">Under the aegis of Smart India Hackathon 2026, engineered for the Ministry of Consumer Affairs, Food &amp; Public Distribution, Government of India. Empowering enforcement officers with edge-AI telemetry for Legal Metrology (Packaged Commodities) Rules, 2011 compliance assurance.</p><div class="flex items-center gap-spacing-xs pt-1"><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed font-mono-data text-mono-data"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>System Operational • AI Confidence Engine v4.2 Active</span></div></div><div class="space-y-spacing-xs"><span class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-bold">Regulatory Directives</span><ul class="space-y-2"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Rule 6(1): Mandatory Declarations</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Rule 9: Font Size &amp; Visibility</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Country of Origin Norms (E-Comm)</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Net Quantity Specifications</li></ul></div><div class="space-y-spacing-xs"><span class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-bold">Quick Access</span><ul class="space-y-2"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Inspector Manual &amp; SOP</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">SIH 2026 Enforcement Portal</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Central Metrology Cell Desk</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Audit Evidentiary Vault</li></ul></div></div><div class="pt-spacing-lg flex flex-col md:flex-row items-center justify-between gap-spacing-md font-body-sm text-body-sm text-on-surface-variant"><div>© 2026 Ministry of Consumer Affairs, Food &amp; Public Distribution, Government of India. Viksit Bharat 2047 Innovation Initiative.</div><div class="flex items-center gap-spacing-lg font-mono-data text-mono-data"><span class="hover:text-primary cursor-pointer">Legal Disclaimer</span><span class="hover:text-primary cursor-pointer">Security Policy</span><span class="hover:text-primary cursor-pointer">Digital India Compliant</span></div></div></div></footer></body></html>

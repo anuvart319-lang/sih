@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface":"#0b1c30","surface-container-lowest":"#ffffff","primary":"#004ac6","on-tertiary-fixed":"#002109","on-secondary-container":"#5c647a","surface-container-highest":"#d3e4fe","surface-container":"#e5eeff","error-container":"#ffdad6","on-tertiary-fixed-variant":"#005320","primary-container":"#2563eb","primary-fixed-dim":"#b4c5ff","outline":"#737686","tertiary-fixed":"#7ffc97","surface-variant":"#d3e4fe","on-error-container":"#93000a","on-secondary":"#ffffff","surface":"#f8f9ff","tertiary":"#006329","on-error":"#ffffff","inverse-on-surface":"#eaf1ff","on-surface-variant":"#434655","on-primary-container":"#eeefff","primary-fixed":"#dbe1ff","on-secondary-fixed-variant":"#3f465c","on-tertiary-container":"#c7ffca","secondary-container":"#dae2fd","error":"#ba1a1a","secondary":"#565e74","background":"#f8f9ff","on-secondary-fixed":"#131b2e","inverse-surface":"#213145","surface-tint":"#0053db","surface-container-low":"#eff4ff","on-background":"#0b1c30","on-primary":"#ffffff","on-tertiary":"#ffffff","inverse-primary":"#b4c5ff","tertiary-fixed-dim":"#62df7d","surface-container-high":"#dce9ff","secondary-fixed":"#dae2fd","on-primary-fixed":"#00174b","on-primary-fixed-variant":"#003ea8","surface-dim":"#cbdbf5","outline-variant":"#c3c6d7","surface-bright":"#f8f9ff","secondary-fixed-dim":"#bec6e0","tertiary-container":"#007f36"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter-mobile":"1rem","spacing-2xl":"3rem","spacing-md":"1rem","spacing-3xl":"4rem","spacing-xl":"2rem","margin-desktop":"2rem","spacing-2xs":"0.25rem","spacing-lg":"1.5rem","container-max":"80rem","spacing-xs":"0.5rem","spacing-sm":"0.75rem","gutter-desktop":"1.5rem","margin-mobile":"1rem"},fontFamily:{"headline-sm":["Plus Jakarta Sans"],"mono-data":["Inter"],"label-sm":["Inter"],"display-hero-mobile":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-xl":["Plus Jakarta Sans"],"body-md":["Inter"],"label-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"]},fontSize:{"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"mono-data":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"display-hero-mobile":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"800"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-xl-mobile":["26px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-inverse-surface text-inverse-on-surface shadow-md border-b border-outline-variant/30"><div class="h-20 max-w-[80rem] mx-auto px-gutter-desktop flex items-center justify-between gap-spacing-md"><div class="flex items-center gap-spacing-md"><div class="flex items-center gap-spacing-sm"><img alt="Smart Metrology SIH 2026 Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UP6uw2AYyESASi8UNs0o_btyx-UGq55JP_87oi02u8NiS6BEaHKq2Vv8H_NmmN87-4z9_f3j1U0kMrDM_tCdnTib5do14l0Dq0XAOjlB5hU_aw3BEnATTtYVArd_7uBU-4zeScLIJ4iEGD-inv4Bk7EY29cOjP9nr0Avz2rlhJk5IlPMwUGFLBGfGgEgLFOIKPvexeRLvf4dH7Y6HFzewvu3857Tnrndim-nDkhSMp_Az3IpxRyiw0PuG7"/><div class="flex flex-col"><div class="flex items-center gap-spacing-xs"><span class="font-headline-sm text-headline-sm text-surface tracking-tight leading-none">Smart Metrology</span><span class="inline-flex items-center px-spacing-xs py-0.5 rounded text-[10px] font-semibold tracking-wider uppercase bg-[#ff9933]/20 text-[#ffb066] border border-[#ff9933]/30">Govt of India</span></div><div class="flex items-center gap-1.5 mt-1"><div class="h-1 w-6 rounded-full bg-gradient-to-r from-[#FF9933] via-[#FFFFFF] to-[#138808]"></div><span class="font-label-sm text-label-sm text-surface-dim uppercase tracking-widest text-[9px]">SIH 2026 • Legal Metrology Rules 2011</span></div></div></div><nav class="hidden lg:flex items-center gap-1 ml-spacing-md" data-active-classes="text-primary-fixed bg-surface-container-highest/10 border-b-2 border-primary-container font-semibold"><a class="px-spacing-sm py-2 rounded-t text-body-sm font-body-sm text-surface-dim hover:text-surface hover:bg-surface-container-highest/10 transition-colors" data-path="home" href="#">Home</a><a class="px-spacing-sm py-2 rounded-t text-body-sm font-body-sm text-surface-dim hover:text-surface hover:bg-surface-container-highest/10 transition-colors" data-path="scan-product" href="#">Scan Product</a><a aria-current="page" class="px-spacing-sm py-2 rounded-t transition-colors text-primary-fixed bg-surface-container-highest/10 border-b-2 border-primary-container font-semibold" data-path="compliance-dashboard" href="#">Compliance Dashboard</a><a class="px-spacing-sm py-2 rounded-t text-body-sm font-body-sm text-surface-dim hover:text-surface hover:bg-surface-container-highest/10 transition-colors" data-path="reports" href="#">Reports</a><a class="px-spacing-sm py-2 rounded-t text-body-sm font-body-sm text-surface-dim hover:text-surface hover:bg-surface-container-highest/10 transition-colors" data-path="product-history" href="#">Product History</a><a class="px-spacing-sm py-2 rounded-t text-body-sm font-body-sm text-surface-dim hover:text-surface hover:bg-surface-container-highest/10 transition-colors" data-path="about" href="#">About</a></nav></div><div class="flex items-center gap-spacing-sm"><div class="hidden xl:flex items-center gap-1.5 bg-surface-container-lowest/10 border border-outline-variant/20 px-spacing-sm py-1.5 rounded-full text-surface-dim font-mono-data text-mono-data"><span class="material-symbols-outlined text-[16px] text-surface-bright">calendar_today</span><span>9 September 2026</span></div><div class="relative flex items-center justify-center"><button class="w-9 h-9 rounded-full flex items-center justify-center text-surface-dim hover:text-surface hover:bg-surface-container-lowest/10 transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span></button><span class="absolute top-1 right-1 flex items-center justify-center min-w-[16px] h-4 px-1 rounded-full bg-error text-on-error font-mono-data text-[10px] font-bold leading-none ring-2 ring-inverse-surface">3</span></div><div class="hidden md:flex items-center gap-spacing-xs pl-spacing-xs border-l border-outline-variant/30"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2OcRfrFHLQrZNXrsnOTj9uPXynXcIHVrsSp35SvVj--zakpxRcqqyFa0N6xD523Ye-Dc6g3te9w6DgPWp2Rd1V6ipedLmvojJXj7MmHO60RXIxMFsw5nGoD1b36s8mI6OEUa55RUNwzdi5rBAsw06qinO70tIdVfjH8pxkmjLd431RVss6S3qd-GuSVplEKszR2wbKCLhvQx9TCxNZeC-qSp44dK23jqJLcE6ivrcTjr_qNL-QOFkXA"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary ring-1 ring-inverse-surface"></span></div><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-surface leading-tight">Rajesh Sharma</span><span class="font-label-sm text-label-sm text-surface-dim leading-tight text-[10px]">Sr. Metrology Inspector (ID: LM-10284)</span></div></div><a class="inline-flex items-center gap-spacing-xs px-spacing-md py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md transition-colors shadow-sm" data-path="scan-product" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span><span>Start Inspection</span></a></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="max-w-[80rem] mx-auto w-full px-gutter-desktop py-spacing-xl flex flex-col gap-spacing-xl">
+<!-- Top Bar / Administrative Breadcrumb & Action Banner -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-spacing-md pb-spacing-xs">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-mono-data text-mono-data">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            SIH-2026 Telemetry Active
+          </span>
+<span class="font-mono-data text-mono-data text-outline">Central Legal Metrology Portal</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+          Enforcement &amp; Compliance Dashboard
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Real-time surveillance overview under Legal Metrology (Packaged Commodities) Rules, 2011. Monitoring mandatory declarations, standard units, and font sizing telemetry across supply lines.
+        </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-spacing-sm flex-wrap shrink-0">
+<button class="inline-flex items-center gap-2 px-spacing-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-low shadow-sm font-label-md text-label-md transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">download</span>
+<span>Export National Summary PDF</span>
+</button>
+<button class="inline-flex items-center gap-2 px-spacing-md py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary shadow-md font-label-md text-label-md transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add_a_photo</span>
+<span>New Inspection</span>
+</button>
+</div>
+</div>
+<!-- Filter Strip -->
+<div class="bg-surface-container-lowest rounded-xl p-spacing-md shadow-sm flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-spacing-md">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-spacing-sm flex-1">
+<!-- Date Filter -->
+<div class="relative flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Audit Period</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-[18px] pointer-events-none">calendar_month</span>
+<select class="w-full pl-9 pr-8 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm appearance-none cursor-pointer focus:outline-none focus:bg-surface-container">
+<option>Last 30 Days (Aug 10 - Sep 9)</option>
+<option>Current Fiscal Q2 (2026-27)</option>
+<option>Last 7 Days</option>
+<option>Year to Date (2026)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 text-secondary text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Region Filter -->
+<div class="relative flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Jurisdiction</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-[18px] pointer-events-none">location_city</span>
+<select class="w-full pl-9 pr-8 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm appearance-none cursor-pointer focus:outline-none focus:bg-surface-container">
+<option>All India / Northern Zone</option>
+<option>Delhi NCR Command</option>
+<option>Western Zone (MH, GJ)</option>
+<option>Southern Zone (KA, TN)</option>
+<option>Eastern Zone (WB, OR)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 text-secondary text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Category Filter -->
+<div class="relative flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Commodity Class</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-[18px] pointer-events-none">category</span>
+<select class="w-full pl-9 pr-8 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm appearance-none cursor-pointer focus:outline-none focus:bg-surface-container">
+<option>Packaged Food Commodities</option>
+<option>Edible Oils &amp; Fats</option>
+<option>Grains, Cereals &amp; Pulses</option>
+<option>Personal Care &amp; Cosmetics</option>
+<option>E-Commerce Multi-Packs</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 text-secondary text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Status Filter -->
+<div class="relative flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Compliance Status</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-[18px] pointer-events-none">filter_alt</span>
+<select class="w-full pl-9 pr-8 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm appearance-none cursor-pointer focus:outline-none focus:bg-surface-container">
+<option>All Statuses</option>
+<option>Compliant (Pass)</option>
+<option>Potential Violation (Flagged)</option>
+<option>Officer Review Required</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 text-secondary text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Reset / Live Sync -->
+<div class="flex items-center gap-2 self-end lg:self-center pt-2 lg:pt-0">
+<button class="p-2 rounded-lg bg-surface-container-low text-secondary hover:text-on-surface hover:bg-surface-container transition-colors" title="Sync live updates" type="button">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+</button>
+<span class="font-mono-data text-mono-data text-secondary hidden sm:inline">Synced 2m ago</span>
+</div>
+</div>
+<!-- 4 Key Metrics Top Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-spacing-md">
+<!-- Metric 1: Total Inspections -->
+<div class="bg-surface-container-lowest rounded-xl p-spacing-lg shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-primary"></div>
+<div class="flex items-start justify-between">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Total Inspections</span>
+<div class="font-display-hero text-[34px] leading-tight text-on-surface font-bold">1,284</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">fact_check</span>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<div class="inline-flex items-center gap-1 font-mono-data text-mono-data text-tertiary">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+<span class="font-semibold">+12.4%</span>
+<span class="text-secondary font-normal">vs last mo</span>
+</div>
+<!-- Mini Sparkline (Blue) -->
+<svg class="w-20 h-7 text-primary stroke-current fill-none" viewbox="0 0 80 28">
+<path d="M 0 20 Q 12 18, 20 22 T 40 12 T 60 15 T 80 4" stroke-linecap="round" stroke-width="2"></path>
+<path class="fill-primary/10" d="M 0 20 Q 12 18, 20 22 T 40 12 T 60 15 T 80 4 L 80 28 L 0 28 Z" stroke-width="0"></path>
+</svg>
+</div>
+</div>
+<!-- Metric 2: Compliant Products -->
+<div class="bg-surface-container-lowest rounded-xl p-spacing-lg shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-tertiary"></div>
+<div class="flex items-start justify-between">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Compliant Products</span>
+<div class="font-display-hero text-[34px] leading-tight text-on-surface font-bold">942</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-tertiary-container/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<div class="inline-flex items-center gap-1 font-mono-data text-mono-data text-tertiary">
+<span class="font-bold">73.4%</span>
+<span class="text-secondary font-normal">legal pass rate</span>
+</div>
+<!-- Mini Sparkline (Emerald) -->
+<svg class="w-20 h-7 text-tertiary stroke-current fill-none" viewbox="0 0 80 28">
+<path d="M 0 22 Q 15 24, 25 18 T 45 14 T 65 8 T 80 3" stroke-linecap="round" stroke-width="2"></path>
+<path class="fill-tertiary/10" d="M 0 22 Q 15 24, 25 18 T 45 14 T 65 8 T 80 3 L 80 28 L 0 28 Z" stroke-width="0"></path>
+</svg>
+</div>
+</div>
+<!-- Metric 3: Potential Violations -->
+<div class="bg-surface-container-lowest rounded-xl p-spacing-lg shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-error"></div>
+<div class="flex items-start justify-between">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Potential Violations</span>
+<div class="font-display-hero text-[34px] leading-tight text-error font-bold">342</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-error-container/40 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<div class="inline-flex items-center gap-1 font-mono-data text-mono-data text-error">
+<span class="material-symbols-outlined text-[16px]">priority_high</span>
+<span class="font-semibold">Notice Pending</span>
+</div>
+<!-- Mini Sparkline (Crimson) -->
+<svg class="w-20 h-7 text-error stroke-current fill-none" viewbox="0 0 80 28">
+<path d="M 0 8 Q 18 12, 30 10 T 55 18 T 70 14 T 80 23" stroke-linecap="round" stroke-width="2"></path>
+<path class="fill-error/10" d="M 0 8 Q 18 12, 30 10 T 55 18 T 70 14 T 80 23 L 80 28 L 0 28 Z" stroke-width="0"></path>
+</svg>
+</div>
+</div>
+<!-- Metric 4: Pending Review -->
+<div class="bg-surface-container-lowest rounded-xl p-spacing-lg shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-secondary"></div>
+<div class="flex items-start justify-between">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Pending Manual Review</span>
+<div class="font-display-hero text-[34px] leading-tight text-on-surface font-bold">86</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-secondary-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">pending_actions</span>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-secondary-container text-on-secondary-fixed font-mono-data text-mono-data font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Awaiting Officer Sign-off
+          </span>
+<span class="font-mono-data text-mono-data text-secondary">Avg SLA: 4.2h</span>
+</div>
+</div>
+</div>
+<!-- Charts & Visual Analytics Grid (4 Bespoke Visual Cards) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-spacing-md">
+<!-- Chart 1: Donut Compliance Rate Gauge (lg:col-span-4) -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-xl p-spacing-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Compliance Rate &amp; Breakdown</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Active statutory audits evaluation</p>
+</div>
+<button class="text-secondary hover:text-on-surface p-1 rounded hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[20px]">info</span>
+</button>
+</div>
+<!-- Donut Visualization -->
+<div class="my-6 flex flex-col items-center justify-center relative">
+<svg class="w-48 h-48 -rotate-90" viewbox="0 0 160 160">
+<!-- Background Ring -->
+<circle class="text-surface-container" cx="80" cy="80" fill="none" r="62" stroke="currentColor" stroke-width="18"></circle>
+<!-- Pass Segment (73.4%) : circumference = 2 * PI * 62 ≈ 389.55 -> dasharray 286, 390 -->
+<circle class="text-tertiary transition-all duration-1000" cx="80" cy="80" fill="none" r="62" stroke="currentColor" stroke-dasharray="286 390" stroke-dashoffset="0" stroke-width="18"></circle>
+<!-- Minor defect segment (12%) : dasharray 47, 390 offset -286 -->
+<circle class="text-primary transition-all duration-1000" cx="80" cy="80" fill="none" r="62" stroke="currentColor" stroke-dasharray="47 390" stroke-dashoffset="-286" stroke-width="18"></circle>
+<!-- Severe defect segment (14.6%) : dasharray 57, 390 offset -333 -->
+<circle class="text-error transition-all duration-1000" cx="80" cy="80" fill="none" r="62" stroke="currentColor" stroke-dasharray="57 390" stroke-dashoffset="-333" stroke-width="18"></circle>
+</svg>
+<!-- Center Label -->
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">73.4%</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary font-semibold">Compliant</span>
+</div>
+</div>
+<!-- Legend Breakdown -->
+<div class="space-y-2 pt-2 border-t-0">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="flex items-center gap-2 text-on-surface">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+              Full Legal Pass
+            </span>
+<span class="font-mono-data font-semibold text-on-surface">942 pkgs (73.4%)</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="flex items-center gap-2 text-on-surface">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+              Minor Font / Formatting Defect
+            </span>
+<span class="font-mono-data font-semibold text-on-surface">154 pkgs (12.0%)</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="flex items-center gap-2 text-on-surface">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+              Severe Missing Mandatory Fields
+            </span>
+<span class="font-mono-data font-semibold text-on-surface">188 pkgs (14.6%)</span>
+</div>
+</div>
+</div>
+<!-- Chart 2: Violation Categories Bar Chart (lg:col-span-8) -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-spacing-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Violation Breakdown by Legal Rule</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Statutory non-compliances flagged by edge OCR inference</p>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-error-container text-on-error-container font-mono-data text-mono-data font-semibold self-start sm:self-auto">
+<span class="material-symbols-outlined text-[14px]">gavel</span>
+            Total Infractions: 342
+          </span>
+</div>
+<!-- Horizontal Metric Bar Grid -->
+<div class="space-y-3.5 my-auto py-2">
+<!-- Item 1 -->
+<div class="space-y-1">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface font-medium flex items-center gap-2">
+<span class="font-mono-data text-label-sm text-secondary bg-surface-container px-1.5 py-0.5 rounded">Rule 9</span>
+                Non-compliant Font Size (&lt; 4mm for &gt; 1kg)
+              </span>
+<span class="font-mono-data font-semibold text-on-surface">112 cases (32.7%)</span>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 78%;"></div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="space-y-1">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface font-medium flex items-center gap-2">
+<span class="font-mono-data text-label-sm text-secondary bg-surface-container px-1.5 py-0.5 rounded">Rule 13</span>
+                Prohibited Unit Symbol (e.g. 'gms', 'Kgs', 'mtrs')
+              </span>
+<span class="font-mono-data font-semibold text-on-surface">78 cases (22.8%)</span>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 55%;"></div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="space-y-1">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface font-medium flex items-center gap-2">
+<span class="font-mono-data text-label-sm text-secondary bg-surface-container px-1.5 py-0.5 rounded">Rule 6(1)(e)</span>
+                MRP missing / smudged / unreadable
+              </span>
+<span class="font-mono-data font-semibold text-on-surface">54 cases (15.8%)</span>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 38%;"></div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="space-y-1">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface font-medium flex items-center gap-2">
+<span class="font-mono-data text-label-sm text-secondary bg-surface-container px-1.5 py-0.5 rounded">Rule 6(1)(c)</span>
+                Missing Net Quantity declaration
+              </span>
+<span class="font-mono-data font-semibold text-on-surface">42 cases (12.3%)</span>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 30%;"></div>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="space-y-1">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface font-medium flex items-center gap-2">
+<span class="font-mono-data text-label-sm text-secondary bg-surface-container px-1.5 py-0.5 rounded">Rule 18(2)</span>
+                Dual MRP / Smudged Price Over-stickering
+              </span>
+<span class="font-mono-data font-semibold text-on-surface">36 cases (10.5%)</span>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 25%;"></div>
+</div>
+</div>
+<!-- Item 6 -->
+<div class="space-y-1">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface font-medium flex items-center gap-2">
+<span class="font-mono-data text-label-sm text-secondary bg-surface-container px-1.5 py-0.5 rounded">Rule 6(1)(g)</span>
+                Consumer Care / Grievance Officer details omitted
+              </span>
+<span class="font-mono-data font-semibold text-on-surface">20 cases (5.8%)</span>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 14%;"></div>
+</div>
+</div>
+</div>
+<div class="pt-3 border-t-0 flex items-center justify-between font-mono-data text-mono-data text-secondary">
+<span>* Automatic notice draft ready for inspector sign-off</span>
+<a class="text-primary font-semibold hover:underline flex items-center gap-1" href="#">
+<span>View Rule Matrix</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Second Visual Row: Geographic Inspection Heatmap + Product Risk Index Matrix -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-spacing-md">
+<!-- Chart 3: Geographic Inspection Heatmap / India Region Status (lg:col-span-7) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-spacing-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-2">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Geographic Inspection Telemetry</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Regional deployment density &amp; enforcement hotspots</p>
+</div>
+<span class="font-mono-data text-mono-data px-2.5 py-1 rounded bg-surface-container text-on-surface font-medium">
+            Active Hubs: 4 Zones
+          </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-spacing-md my-3 items-center">
+<!-- Stylized India Region Vector Graphic -->
+<div class="md:col-span-6 flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-low relative">
+<svg class="w-full max-w-[210px] h-52 text-primary" fill="none" viewbox="0 0 200 240">
+<!-- North / Kashmir to Punjab -->
+<path class="fill-primary/20 hover:fill-primary/30 transition-colors cursor-pointer" d="M 95 10 L 115 28 L 130 50 L 110 65 L 85 58 L 78 40 Z"></path>
+<!-- Delhi NCR Hotspot Marker -->
+<circle class="fill-error animate-ping" cx="102" cy="72" opacity="0.75" r="7"></circle>
+<circle class="fill-error" cx="102" cy="72" r="5"></circle>
+<!-- Western Zone (Rajasthan + Gujarat) -->
+<path class="fill-primary/35 hover:fill-primary/45 transition-colors cursor-pointer" d="M 75 62 L 105 70 L 100 115 L 50 120 L 40 85 Z"></path>
+<!-- Central / Maharashtra -->
+<path class="fill-primary/50 hover:fill-primary/60 transition-colors cursor-pointer" d="M 55 122 L 105 118 L 125 145 L 80 165 L 60 145 Z"></path>
+<!-- Eastern (UP, Bihar, WB, North-East) -->
+<path class="fill-primary/25 hover:fill-primary/35 transition-colors cursor-pointer" d="M 112 70 L 160 85 L 190 90 L 175 125 L 130 135 L 110 115 Z"></path>
+<!-- Southern Zone (Karnataka, AP, TN, Kerala) -->
+<path class="fill-primary/40 hover:fill-primary/50 transition-colors cursor-pointer" d="M 80 167 L 122 147 L 110 200 L 98 230 L 82 205 Z"></path>
+</svg>
+<div class="absolute bottom-2 left-3 flex items-center gap-1.5 font-mono-data text-mono-data text-secondary">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span>Active Field Hotspot</span>
+</div>
+</div>
+<!-- State Ranking Table -->
+<div class="md:col-span-6 flex flex-col justify-center space-y-2.5">
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Top Regulatory Nodes</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<div>
+<div class="font-body-sm font-semibold text-on-surface">Delhi NCR</div>
+<div class="font-mono-data text-label-sm text-secondary">Wholesale Grain Mandi</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-mono-data font-bold text-on-surface">312 scans</div>
+<div class="font-mono-data text-label-sm text-error">24% violation</div>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<div>
+<div class="font-body-sm font-semibold text-on-surface">Maharashtra</div>
+<div class="font-mono-data text-label-sm text-secondary">Mumbai &amp; Pune E-com Hubs</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-mono-data font-bold text-on-surface">248 scans</div>
+<div class="font-mono-data text-label-sm text-primary">16% violation</div>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<div>
+<div class="font-body-sm font-semibold text-on-surface">Karnataka</div>
+<div class="font-mono-data text-label-sm text-secondary">Bengaluru Supermarket Chains</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-mono-data font-bold text-on-surface">195 scans</div>
+<div class="font-mono-data text-label-sm text-tertiary">9% violation</div>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<div>
+<div class="font-body-sm font-semibold text-on-surface">Gujarat</div>
+<div class="font-mono-data text-label-sm text-secondary">Edible Oil Packaging Units</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-mono-data font-bold text-on-surface">174 scans</div>
+<div class="font-mono-data text-label-sm text-primary">14% violation</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-2 font-mono-data text-mono-data text-secondary flex items-center justify-between">
+<span>Field handheld devices synced: 142 officers</span>
+<span class="text-primary font-medium cursor-pointer hover:underline">Download GPS Log</span>
+</div>
+</div>
+<!-- Chart 4: Product Risk Index Matrix (lg:col-span-5) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-spacing-lg shadow-sm flex flex-col justify-between">
+<div class="pb-2">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Product Risk Index Matrix</h3>
+<span class="font-mono-data text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold">Tier vs Class</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Probability of mandatory declaration omissions</p>
+</div>
+<!-- Heatmap Grid -->
+<div class="my-auto space-y-3">
+<!-- Row 1: Tier 1 National Brands -->
+<div class="p-3 rounded-lg bg-surface-container-low space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-body-sm font-bold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified_user</span>
+                Tier-1 National FMCG Brands
+              </span>
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-tertiary-container/30 text-tertiary font-mono-data text-label-sm font-bold">
+                Low Risk • 92% Valid
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">
+              High compliance with font rules and dual declarations. Occasional unit spacing defects.
+            </p>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 92%;"></div>
+</div>
+</div>
+<!-- Row 2: Tier 2 Regional Packers -->
+<div class="p-3 rounded-lg bg-surface-container-low space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-body-sm font-bold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">shield</span>
+                Tier-2 Regional Manufacturers
+              </span>
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-secondary-container text-on-secondary-fixed font-mono-data text-label-sm font-bold">
+                Medium Risk • 71% Valid
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">
+              Frequent non-standard unit abbreviations ('gms') and substandard consumer contact details.
+            </p>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 71%;"></div>
+</div>
+</div>
+<!-- Row 3: Unbranded / Local Repack -->
+<div class="p-3 rounded-lg bg-surface-container-low space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-body-sm font-bold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-error text-[18px]">report_problem</span>
+                Unbranded / Local Repackers
+              </span>
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-error-container text-on-error-container font-mono-data text-label-sm font-bold">
+                High Risk • 48% Valid
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">
+              High occurrence of missing packer addresses, uncertified scales, and smudged ink pricing.
+            </p>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 48%;"></div>
+</div>
+</div>
+</div>
+<div class="pt-2 font-mono-data text-mono-data text-secondary flex items-center justify-between">
+<span>Predictive AI model: v4.2 calibrated</span>
+<span class="text-primary font-medium cursor-pointer hover:underline">Targeted Audit Mode</span>
+</div>
+</div>
+</div>
+<!-- Violation Analysis Spotlight & Evidentiary Card Module -->
+<div class="bg-surface-container-lowest rounded-xl p-spacing-lg shadow-sm space-y-spacing-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-spacing-xs">
+<div>
+<div class="flex items-center gap-2">
+<span class="h-2 w-2 rounded-full bg-error animate-pulse"></span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Urgent Non-Compliance Spotlight</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Live AI bounding box extraction requiring immediate Inspector confirmation under Section 29, LM Act 2009.
+          </p>
+</div>
+<span class="font-mono-data text-mono-data px-3 py-1 rounded-full bg-error-container text-on-error-container font-semibold self-start md:self-auto">
+          Notice ID: LM-NTC-2026-0841
+        </span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-spacing-lg items-center bg-surface-container-low rounded-xl p-spacing-md">
+<!-- Camera Crop Visual with AI Bounding Box -->
+<div class="lg:col-span-4 relative rounded-lg overflow-hidden bg-on-surface h-56 flex items-center justify-center">
+<img class="w-full h-full object-cover opacity-85" data-alt="Close-up photograph of a commercial spice package back panel under forensic inspection lighting with legal metrology declaration stamps in Hindi and English" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsXAzF_erE242lw_GvNUSjU4qWShZ_Q2G9R-ERrpXuhoSdxOl_LypwivB7mX2VBObo8BtMKhDVB5CO1OnVGifSLSkP9P0dRMyHMHMzARrgDP8lh37hdpqUy9yPGrWJtI9xBYalgtKOb4BJ9hUpIoxcVAtZHOfIz7TwL0dcQNX7qPcRTNf1xb0yRgeiqV7GuhosyzaIH8J7eN4gbzAYocMX_f1OMp6uGbqzoDx400dDCumcVR3pLCe4vA"/>
+<!-- Bounding Box Overlays -->
+<div class="absolute inset-4 rounded border-2 border-dashed border-error flex flex-col justify-between p-2 pointer-events-none">
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-lowest/95 shadow text-error font-mono-data text-[10px] font-bold self-start">
+<span class="material-symbols-outlined text-[12px]">search</span>
+<span>RULE 9 DEFECT: FONT &lt; 2mm</span>
+</div>
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-lowest/95 shadow text-error font-mono-data text-[10px] font-bold self-end">
+<span>NET QTY: '200 gms' (ILLEGAL UNIT)</span>
+</div>
+</div>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded bg-on-surface/80 text-surface font-mono-data text-[10px]">
+            Cam Lens Telemetry #02
+          </span>
+</div>
+<!-- Evidence Diagnostic Details -->
+<div class="lg:col-span-5 space-y-2.5">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-mono-data text-label-sm font-bold">
+              Potential Non-Compliance
+            </span>
+<span class="font-mono-data text-mono-data text-secondary">Captured Today, 09:42 IST</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">
+            Royal Spice Garam Masala 200g
+          </div>
+<div class="grid grid-cols-2 gap-2 font-body-sm text-body-sm pt-1">
+<div class="p-2 rounded bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-secondary block">Manufacturer</span>
+<span class="font-medium text-on-surface">Spicy Foods India Pvt Ltd</span>
+</div>
+<div class="p-2 rounded bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-secondary block">Confidence Score</span>
+<span class="font-mono-data font-bold text-tertiary">96.8% AI Match</span>
+</div>
+<div class="p-2 rounded bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-secondary block">Detected Violation 1</span>
+<span class="font-semibold text-error">Missing Mfg Date</span>
+</div>
+<div class="p-2 rounded bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-secondary block">Detected Violation 2</span>
+<span class="font-semibold text-error">Font 1.8mm (Min: 3.0mm)</span>
+</div>
+</div>
+</div>
+<!-- Enforcement Officer Actions -->
+<div class="lg:col-span-3 flex flex-col gap-2.5 justify-center">
+<button class="w-full py-2.5 px-spacing-md rounded-lg bg-error hover:bg-error/90 text-on-error font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+<span>Issue Rule 6 Notice</span>
+</button>
+<button class="w-full py-2.5 px-spacing-md rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">zoom_in</span>
+<span>Examine Full Crop</span>
+</button>
+<button class="w-full py-2 px-spacing-md rounded-lg bg-transparent text-secondary hover:text-on-surface font-label-md text-label-md text-center transition-colors" type="button">
+            Dismiss as False Positive
+          </button>
+</div>
+</div>
+</div>
+<!-- Recent Inspections Table (Complete with Interactive Search and Sorting) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Table Header & Controls -->
+<div class="p-spacing-lg pb-spacing-md flex flex-col md:flex-row md:items-center justify-between gap-spacing-md">
+<div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Inspection Registry</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time repository of field commodity scans and judicial records</p>
+</div>
+<div class="flex items-center gap-spacing-sm flex-wrap">
+<!-- Search input -->
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-[18px]">search</span>
+<input class="pl-9 pr-4 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-secondary focus:outline-none focus:bg-surface-container w-64 md:w-72" placeholder="Search product, brand, or LM-ID..." type="text"/>
+</div>
+<!-- Filter pill buttons -->
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-lg">
+<button class="px-3 py-1 rounded font-label-sm text-label-sm bg-surface-container-lowest text-on-surface font-semibold shadow-xs" type="button">All</button>
+<button class="px-3 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface" type="button">Flagged</button>
+<button class="px-3 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface" type="button">Compliant</button>
+</div>
+</div>
+</div>
+<!-- Tabular View -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-spacing-md font-semibold">Inspection ID</th>
+<th class="py-3 px-spacing-md font-semibold">Product &amp; Brand</th>
+<th class="py-3 px-spacing-md font-semibold">Manufacturer / Packer</th>
+<th class="py-3 px-spacing-md font-semibold">Inspection Date</th>
+<th class="py-3 px-spacing-md font-semibold">Compliance Status</th>
+<th class="py-3 px-spacing-md font-semibold">Violations Found</th>
+<th class="py-3 px-spacing-md font-semibold">Risk Level</th>
+<th class="py-3 px-spacing-md font-semibold">Inspector</th>
+<th class="py-3 px-spacing-md font-semibold text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-sm text-body-sm">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-spacing-md font-mono-data text-mono-data font-semibold text-primary">
+                LM-2026-9082
+              </td>
+<td class="py-3.5 px-spacing-md font-medium">
+                Swasthya Fresh Chakki Atta 5kg
+              </td>
+<td class="py-3.5 px-spacing-md text-on-surface-variant">
+                Swasthya Foods Ltd
+              </td>
+<td class="py-3.5 px-spacing-md font-mono-data text-mono-data">
+                09 Sep 2026
+              </td>
+<td class="py-3.5 px-spacing-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-container/20 text-tertiary font-mono-data text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                  Pass / Compliant
+                </span>
+</td>
+<td class="py-3.5 px-spacing-md text-on-surface-variant font-mono-data">
+                None
+              </td>
+<td class="py-3.5 px-spacing-md">
+<span class="inline-flex items-center gap-1 font-mono-data text-label-sm text-tertiary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Low
+                </span>
+</td>
+<td class="py-3.5 px-spacing-md text-on-surface-variant">
+                R. Sharma
+              </td>
+<td class="py-3.5 px-spacing-md text-right">
+<button class="px-2.5 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm transition-colors" type="button">
+                  View Report
+                </button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="bg-error-container/10 hover:bg-error-container/20 transition-colors">
+<td class="py-3.5 px-spacing-md font-mono-data text-mono-data font-semibold text-error">
+                LM-2026-9081
+              </td>
+<td class="py-3.5 px-spacing-md font-semibold text-on-surface">
+                Royal Spice Garam Masala 200g
+              </td>
+<td class="py-3.5 px-spacing-md text-on-surface-variant">
+                Spicy Foods India Pvt Ltd
+              </td>
+<td class="py-3.5 px-spacing-md font-mono-data text-mono-data">
+                09 Sep 2026
+              </td>
+<td class="py-3.5 px-spacing-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-mono-data text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+                  Potential Violation
+                </span>
+</td>
+<td class="py-3.5 px-spacing-md font-medium text-error">
+                Missing Date, Font Size
+              </td>
+<td class="py-3.5 px-spacing-md">
+<span class="inline-flex items-center gap-1 font-mono-data text-label-sm text-error font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                  High
+                </span>
+</td>
+<td class="py-3.5 px-spacing-md text-on-surface-variant">
+                R. Sharma
+              </td>
+<td class="py-3.5 px-spacing-md text-right">
+<button class="px-2.5 py-1.5 rounded bg-error text-on-error hover:bg-error/90 font-label-sm text-label-sm transition-colors shadow-xs" type="button">
+                  Review Evidence
+                </button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-spacing-md font-mono-data text-mono-data font-semibold text-primary">
+                LM-2026-9080
+              </td>
+<td class="py-3.5 px-spacing-md font-medium">
+                Golden Harvest Basmati Rice 10kg
+              </td>
+<td class="py-3.5 px-spacing-md text-on-surface-variant">
+                Heritage Agro Ltd
+              </td>
+<td class="py-3.5 px-spacing-md font-mono-data text-mono-data">
+                08 Sep 2026
+              </td>
+<td class="py-3.5 px-spacing-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-container/20 text-tertiary font-mono-data text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                  Compliant
+                </span>
+</td>
+<td class="py-3.5 px-spacing-md text-on-surface-variant font-mono-data">
+                None
+              </td>
+<td class="py-3.5 px-spacing-md">
+<span class="inline-flex items-center gap-1 font-mono-data text-label-sm text-tertiary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Low
+                </span>
+</td>
+<td class="py-3.5 px-spacing-md text-on-surface-variant">
+                V. Nair
+              </td>
+<td class="py-3.5 px-spacing-md text-right">
+<button class="px-2.5 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm transition-colors" type="button">
+                  View Report
+                </button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="bg-secondary-container/20 hover:bg-secondary-container/30 transition-colors">
+<td class="py-3.5 px-spacing-md font-mono-data text-mono-data font-semibold text-secondary">
+                LM-2026-9079
+              </td>
+<td class="py-3.5 px-spacing-md font-medium text-on-surface">
+                Pure Drops Mustard Oil 1L
+              </td>
+<td class="py-3.5 px-spacing-md text-on-surface-variant">
+                North Oil Mills
+              </td>
+<td class="py-3.5 px-spacing-md font-mono-data text-mono-data">
+                08 Sep 2026
+              </td>
+<td class="py-3.5 px-spacing-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-mono-data text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">rate_review</span>
+                  Officer Review Required
+                </span>
+</td>
+<td class="py-3.5 px-spacing-md font-medium text-secondary">
+                Dual MRP detected
+              </td>
+<td class="py-3.5 px-spacing-md">
+<span class="inline-flex items-center gap-1 font-mono-data text-label-sm text-secondary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Medium
+                </span>
+</td>
+<td class="py-3.5 px-spacing-md text-on-surface-variant">
+                A. Patel
+              </td>
+<td class="py-3.5 px-spacing-md text-right">
+<button class="px-2.5 py-1.5 rounded bg-secondary text-on-secondary hover:bg-secondary/90 font-label-sm text-label-sm transition-colors shadow-xs" type="button">
+                  Review Evidence
+                </button>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-spacing-md font-mono-data text-mono-data font-semibold text-primary">
+                LM-2026-9078
+              </td>
+<td class="py-3.5 px-spacing-md font-medium">
+                Crunchy Bite Cashews 500g
+              </td>
+<td class="py-3.5 px-spacing-md text-on-surface-variant">
+                Sun Agro Processors
+              </td>
+<td class="py-3.5 px-spacing-md font-mono-data text-mono-data">
+                07 Sep 2026
+              </td>
+<td class="py-3.5 px-spacing-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-container/20 text-tertiary font-mono-data text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                  Compliant
+                </span>
+</td>
+<td class="py-3.5 px-spacing-md text-on-surface-variant font-mono-data">
+                None
+              </td>
+<td class="py-3.5 px-spacing-md">
+<span class="inline-flex items-center gap-1 font-mono-data text-label-sm text-tertiary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Low
+                </span>
+</td>
+<td class="py-3.5 px-spacing-md text-on-surface-variant">
+                R. Sharma
+              </td>
+<td class="py-3.5 px-spacing-md text-right">
+<button class="px-2.5 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm transition-colors" type="button">
+                  View Report
+                </button>
+</td>
+</tr>
+<!-- Row 6 -->
+<tr class="bg-error-container/10 hover:bg-error-container/20 transition-colors">
+<td class="py-3.5 px-spacing-md font-mono-data text-mono-data font-semibold text-error">
+                LM-2026-9077
+              </td>
+<td class="py-3.5 px-spacing-md font-semibold text-on-surface">
+                Shudh Besan 1kg
+              </td>
+<td class="py-3.5 px-spacing-md text-on-surface-variant">
+                Kissan Gram Udhyog
+              </td>
+<td class="py-3.5 px-spacing-md font-mono-data text-mono-data">
+                07 Sep 2026
+              </td>
+<td class="py-3.5 px-spacing-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-mono-data text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+                  Potential Violation
+                </span>
+</td>
+<td class="py-3.5 px-spacing-md font-medium text-error">
+                Net Qty unit 'Kgs' prohibited
+              </td>
+<td class="py-3.5 px-spacing-md">
+<span class="inline-flex items-center gap-1 font-mono-data text-label-sm text-error font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                  Medium
+                </span>
+</td>
+<td class="py-3.5 px-spacing-md text-on-surface-variant">
+                M. Khan
+              </td>
+<td class="py-3.5 px-spacing-md text-right">
+<button class="px-2.5 py-1.5 rounded bg-error text-on-error hover:bg-error/90 font-label-sm text-label-sm transition-colors shadow-xs" type="button">
+                  Review Evidence
+                </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination Strip -->
+<div class="p-spacing-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-spacing-sm font-body-sm text-body-sm text-on-surface-variant">
+<div class="font-mono-data text-mono-data">
+          Showing 1 to 6 of 1,284 logged inspections
+        </div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1 rounded bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-sm" type="button">Previous</button>
+<div class="flex items-center gap-1 font-mono-data text-mono-data">
+<span class="w-7 h-7 flex items-center justify-center rounded bg-primary-container text-on-primary font-bold">1</span>
+<span class="w-7 h-7 flex items-center justify-center rounded hover:bg-surface-container cursor-pointer">2</span>
+<span class="w-7 h-7 flex items-center justify-center rounded hover:bg-surface-container cursor-pointer">3</span>
+<span class="px-1">...</span>
+<span class="w-7 h-7 flex items-center justify-center rounded hover:bg-surface-container cursor-pointer">214</span>
+</div>
+<button class="px-3 py-1 rounded bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-sm" type="button">Next</button>
+</div>
+</div>
+</div>
+<!-- Judicial Evidentiary Report Modal Preview Banner (Right-hand Inspector Helper) -->
+<div class="rounded-xl bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-low p-spacing-lg flex flex-col md:flex-row items-center justify-between gap-spacing-md">
+<div class="flex items-center gap-spacing-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[28px]">account_balance</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-headline-sm text-headline-sm text-on-surface">Legal Metrology Adjudication Ready Format</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xl">
+            Generated telemetry and AI crops are formatted directly for Section 49 compounding notices and District Magistrate court admissibility under Indian Evidence Act guidelines.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="px-spacing-md py-2.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors shadow-sm" type="button">
+          Download Rule Handbook
+        </button>
+<button class="px-spacing-md py-2.5 rounded-lg bg-primary hover:bg-primary/90 text-on-primary font-label-md text-label-md transition-colors shadow-sm" type="button">
+          Bulk Notice Generator
+        </button>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/40 pt-spacing-2xl pb-spacing-xl"><div class="max-w-[80rem] mx-auto px-gutter-desktop"><div class="grid grid-cols-1 md:grid-cols-4 gap-spacing-xl pb-spacing-xl border-b border-outline-variant/30"><div class="space-y-spacing-sm md:col-span-2"><div class="flex items-center gap-spacing-xs"><div class="h-4 w-1 rounded-full bg-primary-container"></div><span class="font-headline-sm text-headline-sm text-on-surface">Smart Metrology Enforcement Architecture</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-lg leading-relaxed">Under the aegis of Smart India Hackathon 2026, engineered for the Ministry of Consumer Affairs, Food &amp; Public Distribution, Government of India. Empowering enforcement officers with edge-AI telemetry for Legal Metrology (Packaged Commodities) Rules, 2011 compliance assurance.</p><div class="flex items-center gap-spacing-xs pt-1"><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed font-mono-data text-mono-data"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>System Operational • AI Confidence Engine v4.2 Active</span></div></div><div class="space-y-spacing-xs"><span class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-bold">Regulatory Directives</span><ul class="space-y-2"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Rule 6(1): Mandatory Declarations</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Rule 9: Font Size &amp; Visibility</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Country of Origin Norms (E-Comm)</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Net Quantity Specifications</li></ul></div><div class="space-y-spacing-xs"><span class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-bold">Quick Access</span><ul class="space-y-2"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Inspector Manual &amp; SOP</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">SIH 2026 Enforcement Portal</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Central Metrology Cell Desk</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Audit Evidentiary Vault</li></ul></div></div><div class="pt-spacing-lg flex flex-col md:flex-row items-center justify-between gap-spacing-md font-body-sm text-body-sm text-on-surface-variant"><div>© 2026 Ministry of Consumer Affairs, Food &amp; Public Distribution, Government of India. Viksit Bharat 2047 Innovation Initiative.</div><div class="flex items-center gap-spacing-lg font-mono-data text-mono-data"><span class="hover:text-primary cursor-pointer">Legal Disclaimer</span><span class="hover:text-primary cursor-pointer">Security Policy</span><span class="hover:text-primary cursor-pointer">Digital India Compliant</span></div></div></div></footer></body></html>

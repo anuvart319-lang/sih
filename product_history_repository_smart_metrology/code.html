@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface":"#0b1c30","surface-container-lowest":"#ffffff","primary":"#004ac6","on-tertiary-fixed":"#002109","on-secondary-container":"#5c647a","surface-container-highest":"#d3e4fe","surface-container":"#e5eeff","error-container":"#ffdad6","on-tertiary-fixed-variant":"#005320","primary-container":"#2563eb","primary-fixed-dim":"#b4c5ff","outline":"#737686","tertiary-fixed":"#7ffc97","surface-variant":"#d3e4fe","on-error-container":"#93000a","on-secondary":"#ffffff","surface":"#f8f9ff","tertiary":"#006329","on-error":"#ffffff","inverse-on-surface":"#eaf1ff","on-surface-variant":"#434655","on-primary-container":"#eeefff","primary-fixed":"#dbe1ff","on-secondary-fixed-variant":"#3f465c","on-tertiary-container":"#c7ffca","secondary-container":"#dae2fd","error":"#ba1a1a","secondary":"#565e74","background":"#f8f9ff","on-secondary-fixed":"#131b2e","inverse-surface":"#213145","surface-tint":"#0053db","surface-container-low":"#eff4ff","on-background":"#0b1c30","on-primary":"#ffffff","on-tertiary":"#ffffff","inverse-primary":"#b4c5ff","tertiary-fixed-dim":"#62df7d","surface-container-high":"#dce9ff","secondary-fixed":"#dae2fd","on-primary-fixed":"#00174b","on-primary-fixed-variant":"#003ea8","surface-dim":"#cbdbf5","outline-variant":"#c3c6d7","surface-bright":"#f8f9ff","secondary-fixed-dim":"#bec6e0","tertiary-container":"#007f36"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter-mobile":"1rem","spacing-2xl":"3rem","spacing-md":"1rem","spacing-3xl":"4rem","spacing-xl":"2rem","margin-desktop":"2rem","spacing-2xs":"0.25rem","spacing-lg":"1.5rem","container-max":"80rem","spacing-xs":"0.5rem","spacing-sm":"0.75rem","gutter-desktop":"1.5rem","margin-mobile":"1rem"},fontFamily:{"headline-sm":["Plus Jakarta Sans"],"mono-data":["Inter"],"label-sm":["Inter"],"display-hero-mobile":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-xl":["Plus Jakarta Sans"],"body-md":["Inter"],"label-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"]},fontSize:{"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"mono-data":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"display-hero-mobile":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"800"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-xl-mobile":["26px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-inverse-surface text-inverse-on-surface shadow-md border-b border-outline-variant/30"><div class="h-20 max-w-[80rem] mx-auto px-gutter-desktop flex items-center justify-between gap-spacing-md"><div class="flex items-center gap-spacing-md"><div class="flex items-center gap-spacing-sm"><img alt="Smart Metrology SIH 2026 Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UP6uw2AYyESASi8UNs0o_btyx-UGq55JP_87oi02u8NiS6BEaHKq2Vv8H_NmmN87-4z9_f3j1U0kMrDM_tCdnTib5do14l0Dq0XAOjlB5hU_aw3BEnATTtYVArd_7uBU-4zeScLIJ4iEGD-inv4Bk7EY29cOjP9nr0Avz2rlhJk5IlPMwUGFLBGfGgEgLFOIKPvexeRLvf4dH7Y6HFzewvu3857Tnrndim-nDkhSMp_Az3IpxRyiw0PuG7"/><div class="flex flex-col"><div class="flex items-center gap-spacing-xs"><span class="font-headline-sm text-headline-sm text-surface tracking-tight leading-none">Smart Metrology</span><span class="inline-flex items-center px-spacing-xs py-0.5 rounded text-[10px] font-semibold tracking-wider uppercase bg-[#ff9933]/20 text-[#ffb066] border border-[#ff9933]/30">Govt of India</span></div><div class="flex items-center gap-1.5 mt-1"><div class="h-1 w-6 rounded-full bg-gradient-to-r from-[#FF9933] via-[#FFFFFF] to-[#138808]"></div><span class="font-label-sm text-label-sm text-surface-dim uppercase tracking-widest text-[9px]">SIH 2026 • Legal Metrology Rules 2011</span></div></div></div><nav class="hidden lg:flex items-center gap-1 ml-spacing-md" data-active-classes="text-primary-fixed bg-surface-container-highest/10 border-b-2 border-primary-container font-semibold"><a class="px-spacing-sm py-2 rounded-t text-body-sm font-body-sm text-surface-dim hover:text-surface hover:bg-surface-container-highest/10 transition-colors" data-path="home" href="#">Home</a><a class="px-spacing-sm py-2 rounded-t text-body-sm font-body-sm text-surface-dim hover:text-surface hover:bg-surface-container-highest/10 transition-colors" data-path="scan-product" href="#">Scan Product</a><a class="px-spacing-sm py-2 rounded-t text-body-sm font-body-sm text-surface-dim hover:text-surface hover:bg-surface-container-highest/10 transition-colors" data-path="compliance-dashboard" href="#">Compliance Dashboard</a><a class="px-spacing-sm py-2 rounded-t text-body-sm font-body-sm text-surface-dim hover:text-surface hover:bg-surface-container-highest/10 transition-colors" data-path="reports" href="#">Reports</a><a aria-current="page" class="px-spacing-sm py-2 rounded-t transition-colors text-primary-fixed bg-surface-container-highest/10 border-b-2 border-primary-container font-semibold" data-path="product-history" href="#">Product History</a><a class="px-spacing-sm py-2 rounded-t text-body-sm font-body-sm text-surface-dim hover:text-surface hover:bg-surface-container-highest/10 transition-colors" data-path="about" href="#">About</a></nav></div><div class="flex items-center gap-spacing-sm"><div class="hidden xl:flex items-center gap-1.5 bg-surface-container-lowest/10 border border-outline-variant/20 px-spacing-sm py-1.5 rounded-full text-surface-dim font-mono-data text-mono-data"><span class="material-symbols-outlined text-[16px] text-surface-bright">calendar_today</span><span>9 September 2026</span></div><div class="relative flex items-center justify-center"><button class="w-9 h-9 rounded-full flex items-center justify-center text-surface-dim hover:text-surface hover:bg-surface-container-lowest/10 transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span></button><span class="absolute top-1 right-1 flex items-center justify-center min-w-[16px] h-4 px-1 rounded-full bg-error text-on-error font-mono-data text-[10px] font-bold leading-none ring-2 ring-inverse-surface">3</span></div><div class="hidden md:flex items-center gap-spacing-xs pl-spacing-xs border-l border-outline-variant/30"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2OcRfrFHLQrZNXrsnOTj9uPXynXcIHVrsSp35SvVj--zakpxRcqqyFa0N6xD523Ye-Dc6g3te9w6DgPWp2Rd1V6ipedLmvojJXj7MmHO60RXIxMFsw5nGoD1b36s8mI6OEUa55RUNwzdi5rBAsw06qinO70tIdVfjH8pxkmjLd431RVss6S3qd-GuSVplEKszR2wbKCLhvQx9TCxNZeC-qSp44dK23jqJLcE6ivrcTjr_qNL-QOFkXA"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary ring-1 ring-inverse-surface"></span></div><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-surface leading-tight">Rajesh Sharma</span><span class="font-label-sm text-label-sm text-surface-dim leading-tight text-[10px]">Sr. Metrology Inspector (ID: LM-10284)</span></div></div><a class="inline-flex items-center gap-spacing-xs px-spacing-md py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md transition-colors shadow-sm" data-path="scan-product" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span><span>Start Inspection</span></a></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle Saffron/Tricolor Ambient Accent Bar -->
+<div class="w-full h-1 bg-gradient-to-r from-[#FF9933] via-surface-container-highest to-[#007f36]"></div>
+<div class="max-w-[80rem] mx-auto px-gutter-desktop py-spacing-lg w-full flex flex-col gap-spacing-lg">
+<!-- Header Section -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-spacing-md">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-mono-data text-mono-data font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+            SIH-LM-SEC 11 &amp; 12
+          </span>
+<span class="font-mono-data text-mono-data text-on-surface-variant uppercase tracking-wider">Legal Metrology Rules 2011 Registry</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Packaged Commodities Repository</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          Comprehensive database of inspected consumer products, brand compliance track records, and historical violation registries under statutory surveillance.
+        </p>
+</div>
+<!-- Header Primary Stats/Quick Metrics -->
+<div class="flex items-center gap-spacing-sm self-start md:self-auto">
+<div class="bg-surface-container-lowest px-spacing-md py-spacing-xs rounded-xl shadow-sm flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-none">4,812</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Active Barcodes</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest px-spacing-md py-spacing-xs rounded-xl shadow-sm flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-error-container leading-none">142</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Flagged Violations</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Top Universal Search & Filtration Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-spacing-md shadow-sm space-y-spacing-sm">
+<!-- Row 1: Search and Primary Actions -->
+<div class="flex flex-col lg:flex-row gap-spacing-sm items-stretch lg:items-center justify-between">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2.5 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container-lowest transition-all placeholder:text-outline" id="repo-search" placeholder="Search products by barcode (EAN-13), brand name, manufacturer, FSSAI lic, or inspection ID..." type="text"/>
+<span class="absolute right-3 top-1/2 -translate-y-1/2 font-mono-data text-mono-data bg-surface-container px-2 py-0.5 rounded text-on-surface-variant hidden sm:inline-block">EAN / SKU</span>
+</div>
+<div class="flex items-center gap-spacing-xs flex-wrap sm:flex-nowrap">
+<button class="inline-flex items-center gap-1.5 px-spacing-md py-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export Repository CSV</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-spacing-md py-2.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+<span>Add Product to Watchlist</span>
+</button>
+</div>
+</div>
+<!-- Row 2: Regulatory Filters -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-spacing-xs pt-1">
+<!-- Category Filter -->
+<div class="relative">
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Commodity Class</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg px-3 py-2 pr-8 focus:outline-none cursor-pointer">
+<option value="all">All Commodities (All Classes)</option>
+<option selected="" value="flours">Flours &amp; Grains (Atta, Maida, Besan)</option>
+<option value="spices">Spices &amp; Condiments</option>
+<option value="dairy">Dairy &amp; Ghee</option>
+<option value="edible_oils">Edible Vegetable Oils</option>
+<option value="personal_care">Personal Care &amp; Hygiene</option>
+<option value="detergents">Detergents &amp; Cleaners</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Compliance Status -->
+<div class="relative">
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Compliance Status</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg px-3 py-2 pr-8 focus:outline-none cursor-pointer">
+<option selected="" value="all">All Statuses (Active Watch)</option>
+<option value="compliant">Compliant (100% Declarations)</option>
+<option value="non_compliant">Non-Compliant (Active Notice)</option>
+<option value="under_notice">Under Rule 6 Adjudication</option>
+<option value="blacklisted">Blacklisted / Seizure Warrant</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Risk Score Filter -->
+<div class="relative">
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Risk Profile Threshold</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg px-3 py-2 pr-8 focus:outline-none cursor-pointer font-medium">
+<option value="all">All Risk Tiers</option>
+<option selected="" value="high">High Risk (&gt;60% violation rate)</option>
+<option value="medium">Medium Risk (20% - 60%)</option>
+<option value="low">Low Risk (&lt;20%)</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Date Range Filter -->
+<div class="relative">
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Inspection Window</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg px-3 py-2 pr-8 focus:outline-none cursor-pointer font-mono-data">
+<option selected="" value="ytd">Jan 2026 – Sep 2026</option>
+<option value="q3">Q3 2026 (Jul - Sep)</option>
+<option value="q2">Q2 2026 (Apr - Jun)</option>
+<option value="fy25">FY 2025-26 Complete</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px]">date_range</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content Layout (65% Left Table | 35% Right Inspection Profile) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-spacing-lg items-start">
+<!-- Left Column: Search Results Repository (65% -> 8 of 12 cols on lg) -->
+<div class="lg:col-span-8 flex flex-col gap-spacing-sm">
+<!-- Tabular Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Table Header / Summary Strip -->
+<div class="px-spacing-md py-3 bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Registered Commodities</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-mono-data text-mono-data font-semibold">5 of 4,812 Shown</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-mono-data text-mono-data">
+<span>Sort:</span>
+<button class="font-medium text-primary hover:underline flex items-center gap-0.5" type="button">
+                Last Inspected <span class="material-symbols-outlined text-[14px]">arrow_downward</span>
+</button>
+</div>
+</div>
+<!-- Responsive Table Wrapper -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-spacing-md font-semibold">Product / EAN-13</th>
+<th class="py-3 px-spacing-sm font-semibold">Manufacturer</th>
+<th class="py-3 px-spacing-sm font-semibold">Category</th>
+<th class="py-3 px-spacing-sm font-semibold text-center">Audits</th>
+<th class="py-3 px-spacing-sm font-semibold text-center">Compliance</th>
+<th class="py-3 px-spacing-sm font-semibold">Risk Tier</th>
+<th class="py-3 px-spacing-sm font-semibold">Last Audit</th>
+<th class="py-3 px-spacing-md font-semibold text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-sm text-body-sm">
+<!-- Row 1 (Selected Row - Swasthya Atta) -->
+<tr class="bg-primary-fixed/30 transition-colors cursor-pointer group">
+<td class="py-3.5 px-spacing-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high overflow-hidden shrink-0 flex items-center justify-center p-0.5">
+<img class="w-full h-full object-cover rounded" data-alt="Packaged traditional Indian stone ground whole wheat chakki atta bag 5kg with legal metrology labeling and seal on clean laboratory background, high resolution inspection photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAplP7NM0emDoNsOb7sZUgXKuE6DH_N-tC0KfxF1PcmLbim6wgOSPjwOSr3k-TeFYUnG4v1988_4wQwexJsw4uG9T__Pgd-BAZBaaI3vuipEwrXVzcKZdzGAyczuomvr1mfZQmZ02P1u0TIo99PEpAE8Z2jE-FgeiqDGfneOpwYZQD0yyQTG91QQSo3XH1FWcSqHi_gzfoKKSZw4xnm5bWfLIoJCbNf7Xxweo1ZAkKyFrgGkYAxONUQFA"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate group-hover:text-primary transition-colors">Swasthya Fresh Chakki Atta 5kg</span>
+<span class="font-mono-data text-mono-data text-primary font-semibold">8901234567891</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-spacing-sm">
+<span class="text-on-surface font-medium block">Swasthya Foods Ltd</span>
+<span class="text-on-surface-variant text-[10px] font-mono-data">FSSAI #10019022009871</span>
+</td>
+<td class="py-3.5 px-spacing-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-medium text-[11px]">Flours</span>
+</td>
+<td class="py-3.5 px-spacing-sm text-center font-mono-data text-on-surface font-semibold">14</td>
+<td class="py-3.5 px-spacing-sm text-center">
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-mono-data font-bold text-[11px]">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                      100%
+                    </div>
+</td>
+<td class="py-3.5 px-spacing-sm">
+<span class="inline-flex items-center gap-1 text-[#15803D] font-mono-data font-semibold text-[11px]">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                      Low (0%)
+                    </span>
+</td>
+<td class="py-3.5 px-spacing-sm font-mono-data text-on-surface-variant whitespace-nowrap">09 Sep 2026</td>
+<td class="py-3.5 px-spacing-md text-right">
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm shadow-sm hover:bg-primary transition-all" type="button">
+<span>Active</span>
+<span class="material-symbols-outlined text-[14px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 2: Spice Route (High Risk) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors cursor-pointer group">
+<td class="py-3.5 px-spacing-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high overflow-hidden shrink-0 flex items-center justify-center p-0.5">
+<img class="w-full h-full object-cover rounded" data-alt="Packaged pouch of Indian garam masala spice blend 200 grams with red and gold foil packaging, legal declarations panel under inspection scanner." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTQEVq2cJyvtN27L7KefrInH8RLk9I0f7D3fUrEuXgtXKACPAQi1RGKrhGXo9uT-AxY8sUKF0i8GG4ZOlS9e7SOKaraoD3_scwy7mQnykANzgpsT3p9BqECRpwQkUXSe3rLSQ0ssv7WWT44nTsK590i64b5Fvf9dp2PTNMJpn_tb8gfrxzcBxk2-b0AgyVsQopfFDA94VG_rDq3cDd33g9X_p_LBlTKHzel4wzQGiMfwCg1T3oRQJvJw"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate group-hover:text-primary transition-colors">The Spice Route Garam Masala 200g</span>
+<span class="font-mono-data text-mono-data text-on-surface-variant">8901234567896</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-spacing-sm">
+<span class="text-on-surface font-medium block">Spicy Foods India</span>
+<span class="text-on-surface-variant text-[10px] font-mono-data">FSSAI #11518044000312</span>
+</td>
+<td class="py-3.5 px-spacing-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-medium text-[11px]">Spices</span>
+</td>
+<td class="py-3.5 px-spacing-sm text-center font-mono-data text-on-surface font-semibold">8</td>
+<td class="py-3.5 px-spacing-sm text-center">
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-mono-data font-bold text-[11px]">
+<span class="material-symbols-outlined text-[14px]">error</span>
+                      62.5%
+                    </div>
+</td>
+<td class="py-3.5 px-spacing-sm">
+<span class="inline-flex items-center gap-1 text-error font-mono-data font-semibold text-[11px]">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+                      High (68%)
+                    </span>
+</td>
+<td class="py-3.5 px-spacing-sm font-mono-data text-on-surface-variant whitespace-nowrap">09 Sep 2026</td>
+<td class="py-3.5 px-spacing-md text-right">
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-all" type="button">
+<span>View</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: Sudha Pure Cow Ghee -->
+<tr class="hover:bg-surface-container-low/60 transition-colors cursor-pointer group">
+<td class="py-3.5 px-spacing-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high overflow-hidden shrink-0 flex items-center justify-center p-0.5">
+<img class="w-full h-full object-cover rounded" data-alt="Packaged tin container of pure desi cow ghee 1 litre with green vegetarian logo and nutritional values table on clean laboratory background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_1LsSkMYdCxX2WOz1b1wr0uSfBXd9mJM7ddiEXIrafe0FATBWmzB9BLUY0QInkXX5hC5hHYqm61tiOtJAJjpG27HwruSN9iFCxgroYuXa674gGaQ7RcbdPVDviRMeFHrn8jm6DBavLm_TpHocTgBe0zM3kFqlG7ag67-lBl6k1gSh9WwNDQdY0wMuKX9T7japwXY96A4JoUiVSq1V9QXo0jrZf5HQ8mD6SIHkwfNpeCsVA-tVPfVKpw"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate group-hover:text-primary transition-colors">Sudha Gold Pure Cow Ghee 1L</span>
+<span class="font-mono-data text-mono-data text-on-surface-variant">8904001234567</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-spacing-sm">
+<span class="text-on-surface font-medium block">Sudha Dairy Coop</span>
+<span class="text-on-surface-variant text-[10px] font-mono-data">FSSAI #10014011002234</span>
+</td>
+<td class="py-3.5 px-spacing-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-medium text-[11px]">Dairy</span>
+</td>
+<td class="py-3.5 px-spacing-sm text-center font-mono-data text-on-surface font-semibold">22</td>
+<td class="py-3.5 px-spacing-sm text-center">
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-mono-data font-bold text-[11px]">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                      95.4%
+                    </div>
+</td>
+<td class="py-3.5 px-spacing-sm">
+<span class="inline-flex items-center gap-1 text-[#15803D] font-mono-data font-semibold text-[11px]">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                      Low (5%)
+                    </span>
+</td>
+<td class="py-3.5 px-spacing-sm font-mono-data text-on-surface-variant whitespace-nowrap">05 Sep 2026</td>
+<td class="py-3.5 px-spacing-md text-right">
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-all" type="button">
+<span>View</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 4: Himalayan Rock Salt -->
+<tr class="hover:bg-surface-container-low/60 transition-colors cursor-pointer group">
+<td class="py-3.5 px-spacing-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high overflow-hidden shrink-0 flex items-center justify-center p-0.5">
+<img class="w-full h-full object-cover rounded" data-alt="Packaged pink Himalayan crystal salt pouch 1kg with transparent window, MRP imprint, and net quantity compliance tag under bright illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa_i4wwn7mc57jhl4gPLd7sch8gTXS4qb73D1_3jRJ8fJN5T-4K4AHPUQFIJlQduVe6pEe7hJxK0HITujsXs-x4ElyzRm4OMe5rXhGuovkk1RuAM-gL7boIpgMQYS1Gqug9Skdd04fybtBEvNQmUFvsFK5HufDevNiGzQRO7vLtO0cZqQemLwzalExCD3R6p5WiDZtniptrorZhiluY8RgsI9ZnlJZyz5A2pe53nKhf0mQRa01UG-uZg"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate group-hover:text-primary transition-colors">Himalayan Rock Salt 1kg</span>
+<span class="font-mono-data text-mono-data text-on-surface-variant">8902500112233</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-spacing-sm">
+<span class="text-on-surface font-medium block">Vedic Minerals Ltd</span>
+<span class="text-on-surface-variant text-[10px] font-mono-data">FSSAI #10819005000188</span>
+</td>
+<td class="py-3.5 px-spacing-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-medium text-[11px]">Salt</span>
+</td>
+<td class="py-3.5 px-spacing-sm text-center font-mono-data text-on-surface font-semibold">6</td>
+<td class="py-3.5 px-spacing-sm text-center">
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-mono-data font-bold text-[11px]">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                      83.3%
+                    </div>
+</td>
+<td class="py-3.5 px-spacing-sm">
+<span class="inline-flex items-center gap-1 text-[#B45309] font-mono-data font-semibold text-[11px]">
+<span class="w-2 h-2 rounded-full bg-[#B45309]"></span>
+                      Medium (28%)
+                    </span>
+</td>
+<td class="py-3.5 px-spacing-sm font-mono-data text-on-surface-variant whitespace-nowrap">01 Sep 2026</td>
+<td class="py-3.5 px-spacing-md text-right">
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-all" type="button">
+<span>View</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 5: Bharat Brand Fortified Rice -->
+<tr class="hover:bg-surface-container-low/60 transition-colors cursor-pointer group">
+<td class="py-3.5 px-spacing-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high overflow-hidden shrink-0 flex items-center justify-center p-0.5">
+<img class="w-full h-full object-cover rounded" data-alt="Packaged woven poly sack of Bharat brand fortified raw rice 10kg with central government subsidy emblem, consumer care details, and bold net weight display." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl1uovCPAm8dDm5_nGFWanwX2haajxpLoEfBtEvQ3M5teku2N273LOCf1oQfo0GgVKjY3szBjdrCw927pckU_Ik5vx-rS5YGYrU3kwQ-Qkl0LJPMd2oA78XVn1PL3MnBY19Kii_nvQyeUJNGTXdNFY1x8NH43lk5UM0gG86WW63WLPJw3n4N2SkrcwR1qPdsqsUvXy5nDvnLXr76-TWWwFOV5xs7FcoPcFth8gtsj5eS8W4Bd1JIpZKQ"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate group-hover:text-primary transition-colors">Bharat Brand Fortified Rice 10kg</span>
+<span class="font-mono-data text-mono-data text-on-surface-variant">8906000998877</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-spacing-sm">
+<span class="text-on-surface font-medium block">Central Agro Hub</span>
+<span class="text-on-surface-variant text-[10px] font-mono-data">FSSAI #10012011000542</span>
+</td>
+<td class="py-3.5 px-spacing-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-medium text-[11px]">Grains</span>
+</td>
+<td class="py-3.5 px-spacing-sm text-center font-mono-data text-on-surface font-semibold">31</td>
+<td class="py-3.5 px-spacing-sm text-center">
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-mono-data font-bold text-[11px]">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                      100%
+                    </div>
+</td>
+<td class="py-3.5 px-spacing-sm">
+<span class="inline-flex items-center gap-1 text-[#15803D] font-mono-data font-semibold text-[11px]">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                      Low (0%)
+                    </span>
+</td>
+<td class="py-3.5 px-spacing-sm font-mono-data text-on-surface-variant whitespace-nowrap">28 Aug 2026</td>
+<td class="py-3.5 px-spacing-md text-right">
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-all" type="button">
+<span>View</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination Footer -->
+<div class="px-spacing-md py-3 bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-2 text-on-surface-variant font-mono-data text-mono-data">
+<div>Showing records 1 - 5 of 4,812 indexed commodities</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded flex items-center justify-center bg-surface-container-lowest text-on-surface disabled:opacity-40" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded flex items-center justify-center bg-primary text-on-primary font-bold" type="button">1</button>
+<button class="w-8 h-8 rounded flex items-center justify-center bg-surface-container-lowest text-on-surface hover:bg-surface-container" type="button">2</button>
+<button class="w-8 h-8 rounded flex items-center justify-center bg-surface-container-lowest text-on-surface hover:bg-surface-container" type="button">3</button>
+<span class="px-1">...</span>
+<button class="w-8 h-8 rounded flex items-center justify-center bg-surface-container-lowest text-on-surface hover:bg-surface-container" type="button">962</button>
+<button class="w-8 h-8 rounded flex items-center justify-center bg-surface-container-lowest text-on-surface hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Inline Visual Analytics: Violations Distribution by Category -->
+<div class="bg-surface-container-lowest rounded-xl p-spacing-md shadow-sm">
+<div class="flex items-center justify-between mb-spacing-sm">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block">Category Enforcement Spectrum</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Statutory non-compliance density across commodity verticals (SIH 2026 Surveillance)</span>
+</div>
+<span class="font-mono-data text-mono-data px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Live Telemetry</span>
+</div>
+<!-- Inline Minimal SVG Bar Chart -->
+<div class="w-full h-24 flex items-end justify-between gap-3 pt-4">
+<!-- Category 1 -->
+<div class="flex-1 flex flex-col items-center gap-1.5">
+<div class="w-full bg-surface-container rounded-t relative group h-20 flex items-end">
+<div class="w-full bg-primary-container rounded-t transition-all" style="height: 18%;"></div>
+</div>
+<span class="font-mono-data text-[10px] text-on-surface-variant truncate w-full text-center">Flours (18%)</span>
+</div>
+<!-- Category 2 -->
+<div class="flex-1 flex flex-col items-center gap-1.5">
+<div class="w-full bg-surface-container rounded-t relative group h-20 flex items-end">
+<div class="w-full bg-error rounded-t transition-all" style="height: 68%;"></div>
+</div>
+<span class="font-mono-data text-[10px] text-error font-semibold truncate w-full text-center">Spices (68%)</span>
+</div>
+<!-- Category 3 -->
+<div class="flex-1 flex flex-col items-center gap-1.5">
+<div class="w-full bg-surface-container rounded-t relative group h-20 flex items-end">
+<div class="w-full bg-tertiary rounded-t transition-all" style="height: 8%;"></div>
+</div>
+<span class="font-mono-data text-[10px] text-on-surface-variant truncate w-full text-center">Dairy (8%)</span>
+</div>
+<!-- Category 4 -->
+<div class="flex-1 flex flex-col items-center gap-1.5">
+<div class="w-full bg-surface-container rounded-t relative group h-20 flex items-end">
+<div class="w-full bg-[#B45309] rounded-t transition-all" style="height: 32%;"></div>
+</div>
+<span class="font-mono-data text-[10px] text-on-surface-variant truncate w-full text-center">Salt (32%)</span>
+</div>
+<!-- Category 5 -->
+<div class="flex-1 flex flex-col items-center gap-1.5">
+<div class="w-full bg-surface-container rounded-t relative group h-20 flex items-end">
+<div class="w-full bg-primary rounded-t transition-all" style="height: 12%;"></div>
+</div>
+<span class="font-mono-data text-[10px] text-on-surface-variant truncate w-full text-center">Grains (12%)</span>
+</div>
+<!-- Category 6 -->
+<div class="flex-1 flex flex-col items-center gap-1.5">
+<div class="w-full bg-surface-container rounded-t relative group h-20 flex items-end">
+<div class="w-full bg-primary-container rounded-t transition-all" style="height: 44%;"></div>
+</div>
+<span class="font-mono-data text-[10px] text-on-surface-variant truncate w-full text-center">Oils (44%)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Selected Product Quick Profile & History Timeline (35% -> 4 of 12 cols on lg) -->
+<div class="lg:col-span-4 flex flex-col gap-spacing-md">
+<!-- Main Product Profile Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-spacing-md relative overflow-hidden">
+<!-- Sovereign Verification Stamp Banner -->
+<div class="absolute top-0 right-0 left-0 h-1.5 bg-tertiary"></div>
+<!-- Product Identity Top Strip -->
+<div class="flex items-start gap-spacing-md pt-2 pb-spacing-sm">
+<div class="relative w-20 h-24 rounded-lg bg-surface-container-low shrink-0 overflow-hidden shadow-inner p-1">
+<img class="w-full h-full object-cover rounded" data-alt="Packaged traditional Indian stone ground whole wheat chakki atta bag 5kg with legal metrology labeling and seal on clean laboratory background, high resolution inspection photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvzzpAmwDz2LNyw7Xj9c1DKaJOjVl6hyKtDeMBvwh4j4lR4NYVFFkobT_s23yC4P9fw0LBFEewu3Z6K9QrcF-1eKutNQp7JhmEDXd8HaW2dyhVOy4KeP9FXVFlg3L7GaTJgi901ikfVHf6aok0eAGY7xEqb5919oBx1Bs08lujkaIQo82pBmOqJAVV8eGB7g2fQNGxXlvSm8dw2Ycl2N5M9ogzlo9W88p9yXa4WGWSVhErr3H3MJeWsA"/>
+<span class="absolute bottom-1 right-1 w-5 h-5 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-mono-data text-[10px] font-bold w-fit mb-1">
+<span class="material-symbols-outlined text-[12px]">format_image_left</span>
+                VERIFIED LEGAL COMPLIANCE
+              </div>
+<h2 class="font-headline-md text-headline-md text-on-surface leading-tight tracking-tight">Swasthya Fresh Chakki Atta</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Brand: <strong class="text-on-surface">Swasthya Foods Ltd</strong>
+</p>
+<div class="font-mono-data text-mono-data text-on-surface-variant mt-1">
+                Class: <span class="text-primary font-semibold">Whole Wheat Atta</span>
+</div>
+</div>
+</div>
+<!-- Regulatory Metric Overview Cards -->
+<div class="grid grid-cols-2 gap-spacing-xs py-spacing-sm">
+<div class="bg-surface-container-low p-2.5 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Declared Quantity</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold font-mono-data">5 kg ℮</span>
+<span class="font-mono-data text-[10px] text-tertiary block mt-0.5">Standard Pack (Rule 5)</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Historical Pass Rate</span>
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold font-mono-data">100.0%</span>
+<span class="font-mono-data text-[10px] text-on-surface-variant block mt-0.5">14 Audits Recorded</span>
+</div>
+</div>
+<!-- Assigned Legal Metrology Rule Banner -->
+<div class="bg-surface-container-high/60 p-spacing-sm rounded-lg my-spacing-xs">
+<div class="flex items-center gap-1.5 text-primary mb-1">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+<span class="font-label-md text-label-md font-bold">Assigned Legal Metrology Mandate</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">
+<strong>Fourth Schedule:</strong> Standard Quantities for Foodgrains. Wheat Flour permitted packages: <span class="font-mono-data font-semibold">1kg, 2kg, 5kg, 10kg</span>.
+            </p>
+<div class="flex items-center gap-2 mt-2 pt-2 border-t border-surface-container">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-mono-data text-mono-data text-on-surface-variant">Rule 6(1)(b) Net Weight Verification: Compliant</span>
+</div>
+</div>
+<!-- Regulatory Audit History Timeline -->
+<div class="pt-spacing-sm">
+<div class="flex items-center justify-between mb-spacing-sm">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-bold">Regulatory Timeline</span>
+<span class="font-mono-data text-mono-data text-primary">3 Key Checkpoints</span>
+</div>
+<div class="relative pl-6 space-y-4 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-highest">
+<!-- Timeline Item 1: 09 Sep 2026 -->
+<div class="relative">
+<span class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-tertiary ring-4 ring-surface-container-lowest flex items-center justify-center text-on-tertiary">
+<span class="material-symbols-outlined text-[10px]">check</span>
+</span>
+<div class="flex items-center justify-between leading-none">
+<span class="font-mono-data text-mono-data font-bold text-on-surface">09 Sep 2026</span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-mono-data text-[10px] font-bold">PASS 98%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-1 font-medium">Routine Retail Scan</p>
+<p class="font-mono-data text-[11px] text-on-surface-variant">Station: Mandi Hub Delhi North • Insp. LM-10284</p>
+</div>
+<!-- Timeline Item 2: 14 Jun 2026 -->
+<div class="relative">
+<span class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-tertiary ring-4 ring-surface-container-lowest flex items-center justify-center text-on-tertiary">
+<span class="material-symbols-outlined text-[10px]">check</span>
+</span>
+<div class="flex items-center justify-between leading-none">
+<span class="font-mono-data text-mono-data font-bold text-on-surface">14 Jun 2026</span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-mono-data text-[10px] font-bold">PASS 97%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-1 font-medium">Batch Check SFA234</p>
+<p class="font-mono-data text-[11px] text-on-surface-variant">Automated E-Commerce Warehouse Sweep (Blinkit BLR)</p>
+</div>
+<!-- Timeline Item 3: 12 Jan 2026 -->
+<div class="relative">
+<span class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-primary ring-4 ring-surface-container-lowest flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[10px]">verified</span>
+</span>
+<div class="flex items-center justify-between leading-none">
+<span class="font-mono-data text-mono-data font-bold text-on-surface">12 Jan 2026</span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-mono-data text-[10px] font-bold">PASS 99%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-1 font-medium">Initial Market Registration</p>
+<p class="font-mono-data text-[11px] text-on-surface-variant">National Legal Metrology Portal Onboarding Approval</p>
+</div>
+</div>
+</div>
+<!-- Officer Action Buttons -->
+<div class="pt-spacing-md mt-spacing-md border-t border-surface-container flex flex-col gap-2">
+<button class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+<span>Trigger Re-Inspection</span>
+</button>
+<button class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">article</span>
+<span>View Certified Dossier</span>
+</button>
+</div>
+</div>
+<!-- Evidentiary Vault Status Card -->
+<div class="bg-surface-container-low rounded-xl p-spacing-md shadow-sm">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[20px]">lock</span>
+<span class="font-label-md text-label-md font-bold">Audit Vault Telemetry</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+            All inspection telemetry, bounding boxes, OCR extractions, and certified timestamps are cryptographically signed under Digital India sovereign metrology ledger standards.
+          </p>
+<div class="mt-3 flex items-center justify-between text-mono-data font-mono-data text-on-surface-variant">
+<span>SHA-256 Checksum: Verified</span>
+<span class="text-tertiary font-bold">● Synchronized</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple search bar filter interaction demonstration
+  document.getElementById('repo-search')?.addEventListener('input', function(e) {
+    const term = e.target.value.toLowerCase();
+    const rows = document.querySelectorAll('tbody tr');
+    rows.forEach(row => {
+      const text = row.textContent.toLowerCase();
+      if (text.includes(term)) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/40 pt-spacing-2xl pb-spacing-xl"><div class="max-w-[80rem] mx-auto px-gutter-desktop"><div class="grid grid-cols-1 md:grid-cols-4 gap-spacing-xl pb-spacing-xl border-b border-outline-variant/30"><div class="space-y-spacing-sm md:col-span-2"><div class="flex items-center gap-spacing-xs"><div class="h-4 w-1 rounded-full bg-primary-container"></div><span class="font-headline-sm text-headline-sm text-on-surface">Smart Metrology Enforcement Architecture</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-lg leading-relaxed">Under the aegis of Smart India Hackathon 2026, engineered for the Ministry of Consumer Affairs, Food &amp; Public Distribution, Government of India. Empowering enforcement officers with edge-AI telemetry for Legal Metrology (Packaged Commodities) Rules, 2011 compliance assurance.</p><div class="flex items-center gap-spacing-xs pt-1"><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed font-mono-data text-mono-data"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>System Operational • AI Confidence Engine v4.2 Active</span></div></div><div class="space-y-spacing-xs"><span class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-bold">Regulatory Directives</span><ul class="space-y-2"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Rule 6(1): Mandatory Declarations</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Rule 9: Font Size &amp; Visibility</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Country of Origin Norms (E-Comm)</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Net Quantity Specifications</li></ul></div><div class="space-y-spacing-xs"><span class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-bold">Quick Access</span><ul class="space-y-2"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Inspector Manual &amp; SOP</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">SIH 2026 Enforcement Portal</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Central Metrology Cell Desk</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Audit Evidentiary Vault</li></ul></div></div><div class="pt-spacing-lg flex flex-col md:flex-row items-center justify-between gap-spacing-md font-body-sm text-body-sm text-on-surface-variant"><div>© 2026 Ministry of Consumer Affairs, Food &amp; Public Distribution, Government of India. Viksit Bharat 2047 Innovation Initiative.</div><div class="flex items-center gap-spacing-lg font-mono-data text-mono-data"><span class="hover:text-primary cursor-pointer">Legal Disclaimer</span><span class="hover:text-primary cursor-pointer">Security Policy</span><span class="hover:text-primary cursor-pointer">Digital India Compliant</span></div></div></div></footer></body></html>
