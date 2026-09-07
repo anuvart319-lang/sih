@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login – Smart Metrology | SIH 2026</title>
+  <meta name="description" content="Secure login portal for Smart Metrology – AI-Powered Legal Metrology Compliance System for Government of India, SIH 2026."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg-deep:#060d1a;--bg-input:rgba(255,255,255,0.06);
+      --border:rgba(255,255,255,0.1);--border-focus:#3b7fff;
+      --primary:#2563eb;--primary-light:#60a5fa;
+      --text-primary:#e8f0ff;--text-secondary:#8ba3cc;--text-muted:#4a6080;
+      --error:#f87171;--success:#34d399;--radius:14px;
+    }
+    html,body{height:100%;font-family:'Inter',sans-serif;background:var(--bg-deep);color:var(--text-primary);overflow:hidden}
+    .bg-canvas{position:fixed;inset:0;z-index:0;background:radial-gradient(ellipse 80% 60% at 20% 10%,rgba(37,99,235,0.18) 0%,transparent 60%),radial-gradient(ellipse 60% 80% at 80% 80%,rgba(16,185,129,0.08) 0%,transparent 55%),radial-gradient(ellipse 100% 100% at 50% 50%,#060d1a 0%,#030810 100%)}
+    .grid-overlay{position:fixed;inset:0;z-index:0;background-image:linear-gradient(rgba(59,119,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(59,119,255,0.04) 1px,transparent 1px);background-size:48px 48px}
+    .orb{position:fixed;border-radius:50%;filter:blur(80px);z-index:0;pointer-events:none;animation:orbFloat 8s ease-in-out infinite}
+    .orb-1{width:500px;height:500px;top:-200px;left:-150px;background:rgba(37,99,235,0.12);animation-delay:0s}
+    .orb-2{width:400px;height:400px;bottom:-180px;right:-100px;background:rgba(16,185,129,0.08);animation-delay:-3s}
+    @keyframes orbFloat{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(20px,-30px) scale(1.05)}}
+    .page{position:relative;z-index:1;height:100vh;display:grid;grid-template-columns:1fr 480px}
+    .left-panel{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:60px 80px;border-right:1px solid var(--border);position:relative;overflow:hidden}
+    .tricolor-bar{position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,#FF9933 33.3%,#FFFFFF 33.3% 66.6%,#138808 66.6%)}
+    .govt-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:100px;background:rgba(255,153,51,0.1);border:1px solid rgba(255,153,51,0.25);font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#ffb066;margin-bottom:28px}
+    .dot{width:6px;height:6px;border-radius:50%;background:#ff9933;animation:pulse 2s infinite;display:inline-block}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.5;transform:scale(1.5)}}
+    .left-panel h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(36px,4vw,52px);font-weight:800;line-height:1.1;letter-spacing:-0.03em;color:#fff;margin-bottom:20px}
+    .left-panel h1 .accent{color:var(--primary-light)}
+    .left-panel>p{font-size:16px;color:var(--text-secondary);line-height:1.7;max-width:480px;margin-bottom:40px}
+    .features{display:flex;flex-direction:column;gap:16px}
+    .feature{display:flex;align-items:flex-start;gap:14px;padding:16px 18px;border-radius:12px;background:rgba(255,255,255,0.03);border:1px solid var(--border);transition:border-color 0.2s,background 0.2s}
+    .feature:hover{border-color:rgba(59,119,255,0.3);background:rgba(59,119,255,0.04)}
+    .feature-icon{width:38px;height:38px;border-radius:10px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:20px}
+    .feature-icon.blue{background:rgba(37,99,235,0.18)}.feature-icon.green{background:rgba(16,185,129,0.18)}.feature-icon.purple{background:rgba(139,92,246,0.18)}
+    .feature-text strong{display:block;font-size:14px;font-weight:600;color:var(--text-primary);margin-bottom:2px}
+    .feature-text span{font-size:12px;color:var(--text-secondary);line-height:1.5}
+    .left-footer{position:absolute;bottom:30px;left:80px;display:flex;align-items:center;gap:10px}
+    .india-flag-strip{height:4px;width:48px;border-radius:2px;background:linear-gradient(to right,#FF9933 33%,#FFF 33% 66%,#138808 66%)}
+    .left-footer span{font-size:11px;color:var(--text-muted);letter-spacing:0.06em;text-transform:uppercase}
+    .right-panel{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:40px 48px;overflow-y:auto}
+    .logo-row{display:flex;flex-direction:column;align-items:center;margin-bottom:32px;text-align:center}
+    .logo-icon{width:60px;height:60px;border-radius:16px;background:linear-gradient(135deg,#1d4ed8,#3b7fff);display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:14px;box-shadow:0 0 40px rgba(59,119,255,0.4)}
+    .logo-row h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:22px;font-weight:700;color:#fff;margin-bottom:4px}
+    .logo-row p{font-size:13px;color:var(--text-secondary)}
+    .tabs{display:flex;background:rgba(255,255,255,0.05);border-radius:10px;padding:4px;margin-bottom:28px;width:100%}
+    .tab-btn{flex:1;padding:9px;border:none;border-radius:7px;font-size:13px;font-weight:600;cursor:pointer;transition:all 0.2s;background:transparent;color:var(--text-secondary)}
+    .tab-btn.active{background:var(--primary);color:#fff;box-shadow:0 2px 12px rgba(37,99,235,0.4)}
+    .auth-form{width:100%}
+    .form-group{margin-bottom:16px}
+    .form-label{display:block;font-size:12px;font-weight:600;letter-spacing:0.04em;color:var(--text-secondary);text-transform:uppercase;margin-bottom:7px}
+    .input-wrap{position:relative}
+    .input-wrap .icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);font-size:18px;color:var(--text-muted);pointer-events:none}
+    .form-input{width:100%;padding:12px 14px 12px 42px;background:var(--bg-input);border:1px solid var(--border);border-radius:10px;font-size:14px;color:var(--text-primary);font-family:'Inter',sans-serif;transition:border-color 0.2s,box-shadow 0.2s,background 0.2s;outline:none}
+    .form-input::placeholder{color:var(--text-muted)}
+    .form-input:focus{border-color:var(--border-focus);box-shadow:0 0 0 3px rgba(59,119,255,0.15);background:rgba(255,255,255,0.09)}
+    .pw-toggle{position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:var(--text-muted);padding:0;font-size:18px;transition:color 0.2s}
+    .pw-toggle:hover{color:var(--text-secondary)}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .form-hint{font-size:11px;color:var(--text-muted);margin-top:5px}
+    .submit-btn{width:100%;padding:13px;background:linear-gradient(135deg,#1d4ed8,#3b7fff);border:none;border-radius:10px;cursor:pointer;font-size:14px;font-weight:700;color:#fff;font-family:'Inter',sans-serif;letter-spacing:0.02em;transition:all 0.2s;margin-top:8px;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 4px 20px rgba(37,99,235,0.35)}
+    .submit-btn:hover:not(:disabled){transform:translateY(-1px);box-shadow:0 6px 28px rgba(37,99,235,0.5)}
+    .submit-btn:disabled{opacity:0.65;cursor:not-allowed;transform:none}
+    .spinner{width:16px;height:16px;border:2px solid rgba(255,255,255,0.3);border-top-color:#fff;border-radius:50%;animation:spin 0.7s linear infinite;display:none}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .alert{display:none;padding:12px 14px;border-radius:10px;font-size:13px;font-weight:500;margin-bottom:16px;align-items:center;gap:10px}
+    .alert.error{background:rgba(248,113,113,0.12);border:1px solid rgba(248,113,113,0.3);color:var(--error)}
+    .alert.success{background:rgba(52,211,153,0.12);border:1px solid rgba(52,211,153,0.3);color:var(--success)}
+    .alert.show{display:flex}
+    .divider{display:flex;align-items:center;gap:12px;margin:20px 0}
+    .divider::before,.divider::after{content:'';flex:1;height:1px;background:var(--border)}
+    .divider span{font-size:11px;color:var(--text-muted);white-space:nowrap}
+    .footer-note{text-align:center;font-size:11px;color:var(--text-muted);margin-top:20px;line-height:1.6}
+    @media(max-width:900px){html,body{overflow:auto}.page{grid-template-columns:1fr;height:auto}.left-panel{display:none}.right-panel{min-height:100vh;padding:40px 24px}}
+  </style>
+</head>
+<body>
+<div class="bg-canvas"></div>
+<div class="grid-overlay"></div>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+
+<div class="page">
+  <div class="left-panel">
+    <div class="tricolor-bar"></div>
+    <div class="govt-badge"><span class="dot"></span>Government of India · SIH 2026</div>
+    <h1>AI-Powered<br/>Legal Metrology<br/><span class="accent">Compliance</span></h1>
+    <p>Smart Metrology is the official AI-driven inspection platform for Legal Metrology Officers. Detect violations, generate evidentiary reports, and maintain compliance under Legal Metrology Rules, 2011.</p>
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon blue"><span class="material-symbols-outlined" style="color:#60a5fa">document_scanner</span></div>
+        <div class="feature-text"><strong>AI Product Scanning</strong><span>Instant barcode / label analysis with violation detection powered by Gemini AI</span></div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon green"><span class="material-symbols-outlined" style="color:#34d399">fact_check</span></div>
+        <div class="feature-text"><strong>Evidentiary Report Generation</strong><span>Auto-generate court-admissible inspection reports in seconds</span></div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon purple"><span class="material-symbols-outlined" style="color:#a78bfa">analytics</span></div>
+        <div class="feature-text"><strong>Real-time Compliance Dashboard</strong><span>Monitor district-wise violations, trends, and compliance scores live</span></div>
+      </div>
+    </div>
+    <div class="left-footer">
+      <div class="india-flag-strip"></div>
+      <span>Smart India Hackathon 2026</span>
+    </div>
+  </div>
+
+  <div class="right-panel">
+    <div class="logo-row">
+      <div class="logo-icon">&#9878;&#65039;</div>
+      <h2>Smart Metrology</h2>
+      <p>Inspector Portal · Secure Access</p>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active" id="loginTab" onclick="switchTab('login')">Sign In</button>
+      <button class="tab-btn" id="signupTab" onclick="switchTab('signup')">Register</button>
+    </div>
+
+    <div class="alert" id="authAlert">
+      <span class="material-symbols-outlined" style="font-size:18px" id="alertIcon">error</span>
+      <span id="alertMsg"></span>
+    </div>
+
+    <form class="auth-form" id="loginForm" onsubmit="handleLogin(event)">
+      <div class="form-group">
+        <label class="form-label" for="loginEmail">Email Address</label>
+        <div class="input-wrap">
+          <span class="material-symbols-outlined icon">mail</span>
+          <input class="form-input" type="email" id="loginEmail" placeholder="inspector@example.gov.in" required autocomplete="email"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="loginPassword">Password</label>
+        <div class="input-wrap">
+          <span class="material-symbols-outlined icon">lock</span>
+          <input class="form-input" type="password" id="loginPassword" placeholder="Enter your password" required autocomplete="current-password"/>
+          <button type="button" class="pw-toggle" onclick="togglePw('loginPassword',this)"><span class="material-symbols-outlined">visibility</span></button>
+        </div>
+      </div>
+      <button type="submit" class="submit-btn" id="loginBtn">
+        <span class="spinner" id="loginSpinner"></span>
+        <span class="material-symbols-outlined" style="font-size:18px" id="loginIcon">login</span>
+        <span id="loginBtnText">Sign In to Portal</span>
+      </button>
+    </form>
+
+    <form class="auth-form" id="signupForm" style="display:none" onsubmit="handleSignup(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="signupFirstName">First Name</label>
+          <div class="input-wrap">
+            <span class="material-symbols-outlined icon">person</span>
+            <input class="form-input" type="text" id="signupFirstName" placeholder="Rajesh" required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="signupLastName">Last Name</label>
+          <div class="input-wrap">
+            <span class="material-symbols-outlined icon">person</span>
+            <input class="form-input" type="text" id="signupLastName" placeholder="Sharma" required/>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="signupEmail">Official Email</label>
+        <div class="input-wrap">
+          <span class="material-symbols-outlined icon">mail</span>
+          <input class="form-input" type="email" id="signupEmail" placeholder="inspector@example.gov.in" required autocomplete="email"/>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="signupEmployeeId">Employee ID</label>
+          <div class="input-wrap">
+            <span class="material-symbols-outlined icon">badge</span>
+            <input class="form-input" type="text" id="signupEmployeeId" placeholder="LM-10284" required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="signupPhone">Phone</label>
+          <div class="input-wrap">
+            <span class="material-symbols-outlined icon">phone</span>
+            <input class="form-input" type="tel" id="signupPhone" placeholder="+91 98765 43210"/>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="signupDept">Department</label>
+        <div class="input-wrap">
+          <span class="material-symbols-outlined icon">business</span>
+          <input class="form-input" type="text" id="signupDept" placeholder="e.g. Delhi Legal Metrology Division" required/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="signupPassword">Create Password</label>
+        <div class="input-wrap">
+          <span class="material-symbols-outlined icon">lock</span>
+          <input class="form-input" type="password" id="signupPassword" placeholder="Min. 8 characters" required minlength="8" autocomplete="new-password"/>
+          <button type="button" class="pw-toggle" onclick="togglePw('signupPassword',this)"><span class="material-symbols-outlined">visibility</span></button>
+        </div>
+        <p class="form-hint">Must be at least 8 characters long</p>
+      </div>
+      <button type="submit" class="submit-btn" id="signupBtn">
+        <span class="spinner" id="signupSpinner"></span>
+        <span class="material-symbols-outlined" style="font-size:18px" id="signupIcon">how_to_reg</span>
+        <span id="signupBtnText">Create Inspector Account</span>
+      </button>
+    </form>
+
+    <div class="divider"><span>Secure Portal · Government of India</span></div>
+    <div class="footer-note">By accessing this portal you agree to the Official Secrets Act, 1923<br/>and Legal Metrology Rules, 2011. All sessions are logged.</div>
+  </div>
+</div>
+
+<script>
+const SUPABASE_URL  = 'https://hilhkctqrcuicjzffcpc.supabase.co';
+const SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhpbGhrY3RxcmN1aWNqemZmY3BjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg3ODc2OTYsImV4cCI6MjEwNDM2MzY5Nn0.xUwfzBxo9fk12VKBl9xjZRvtNYw7mZh8uXMHy3fnZZY';
+const { createClient } = supabase;
+const sb = createClient(SUPABASE_URL, SUPABASE_ANON);
+
+sb.auth.getSession().then(({ data: { session } }) => { if (session) location.href = 'dashboard.html'; });
+
+function switchTab(tab) {
+  document.getElementById('loginForm').style.display  = tab==='login'  ? 'block' : 'none';
+  document.getElementById('signupForm').style.display = tab==='signup' ? 'block' : 'none';
+  document.getElementById('loginTab').classList.toggle('active',  tab==='login');
+  document.getElementById('signupTab').classList.toggle('active', tab==='signup');
+  hideAlert();
+}
+
+function showAlert(msg, type='error') {
+  const el = document.getElementById('authAlert');
+  document.getElementById('alertMsg').textContent  = msg;
+  document.getElementById('alertIcon').textContent = type==='error' ? 'error' : 'check_circle';
+  el.className = 'alert '+type+' show';
+}
+function hideAlert() { document.getElementById('authAlert').className = 'alert'; }
+
+function togglePw(id, btn) {
+  const inp = document.getElementById(id);
+  const icon = btn.querySelector('.material-symbols-outlined');
+  inp.type = inp.type==='password' ? 'text' : 'password';
+  icon.textContent = inp.type==='password' ? 'visibility' : 'visibility_off';
+}
+
+function setLoading(prefix, loading) {
+  document.getElementById(prefix+'Btn').disabled = loading;
+  document.getElementById(prefix+'Spinner').style.display = loading ? 'block' : 'none';
+  document.getElementById(prefix+'Icon').style.display    = loading ? 'none'  : 'block';
+  document.getElementById(prefix+'BtnText').textContent   = loading
+    ? (prefix==='login' ? 'Signing In...' : 'Creating Account...')
+    : (prefix==='login' ? 'Sign In to Portal' : 'Create Inspector Account');
+}
+
+async function handleLogin(e) {
+  e.preventDefault(); hideAlert(); setLoading('login', true);
+  const email    = document.getElementById('loginEmail').value.trim();
+  const password = document.getElementById('loginPassword').value;
+  try {
+    const { data, error } = await sb.auth.signInWithPassword({ email, password });
+    if (error) throw error;
+    const { data: profile } = await sb.from('user_profiles').select('login_count').eq('user_id', data.user.id).single();
+    await sb.from('user_profiles').update({ last_login: new Date().toISOString(), login_count: (profile?.login_count||0)+1 }).eq('user_id', data.user.id);
+    location.href = 'dashboard.html';
+  } catch(err) {
+    showAlert(err.message || 'Login failed. Please check your credentials.');
+    setLoading('login', false);
+  }
+}
+
+async function handleSignup(e) {
+  e.preventDefault(); hideAlert(); setLoading('signup', true);
+  const firstName  = document.getElementById('signupFirstName').value.trim();
+  const lastName   = document.getElementById('signupLastName').value.trim();
+  const email      = document.getElementById('signupEmail').value.trim();
+  const password   = document.getElementById('signupPassword').value;
+  const employeeId = document.getElementById('signupEmployeeId').value.trim();
+  const phone      = document.getElementById('signupPhone').value.trim();
+  const dept       = document.getElementById('signupDept').value.trim();
+  const fullName   = firstName+' '+lastName;
+  try {
+    const { data, error } = await sb.auth.signUp({ email, password, options: { data: { full_name: fullName } } });
+    if (error) throw error;
+    if (data.user) {
+      await sb.from('user_profiles').upsert({ user_id:data.user.id, email, full_name:fullName, employee_id:employeeId, phone, department:dept, role:'Inspector', login_count:0 });
+    }
+    showAlert('Account created! Check your email to confirm, then sign in.', 'success');
+    setTimeout(() => switchTab('login'), 3000);
+  } catch(err) {
+    showAlert(err.message || 'Registration failed. Please try again.');
+  } finally { setLoading('signup', false); }
+}
+</script>
+</body>
+</html>
